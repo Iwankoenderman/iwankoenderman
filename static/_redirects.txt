@@ -1,0 +1,11 @@
+# Redirect default Netlify subdomain to primary domain
+https://iwankoenderman.netlify.com/* https://iwankoenderman.com/:splat 301!
+http://www.iwankoenderman.com/* https://iwankoenderman.com/:splat 301!
+https://iwankoenderman.com/index.html https://iwankoenderman.com/:splat 301!
+https://iwankoenderman.com/thanksebook/ https://iwankoenderman.com/en/thanksebook/:splat 301!
+https://iwankoenderman.com/privacystatementandcookiepolicy/ https://iwankoenderman.com/en/privacystatementandcookiepolicy/:splat 301!
+https://iwankoenderman.com/termandconditions/ https://iwankoenderman.com/en/termandconditions/:splat 301!
+https://iwankoenderman.com/nl/termandconditions/ https://iwankoenderman.com/en/termandconditions/:splat 301!
+https://iwankoenderman.com/nl/privacystatementandcookiepolicy https://iwankoenderman.com/en/privacystatementandcookiepolicy/:splat 301!
+https://iwankoenderman.com/introductionvideoiwankoenderman/ https://iwankoenderman.com/en//introductionvideoiwankoenderman/:splat 301!
+https://iwankoenderman.com/videoreviewenglish/ https://iwankoenderman.com/en/videoreviewenglish/:splat 301!

@@ -1,0 +1,9 @@
+# Redirect default Netlify subdomain to primary domain
+https://iwankoenderman.netlify.com/ https://iwankoenderman.com/:splat 301!
+https://www.iwankoenderman.com/ https://iwankoenderman.com/:splat 301!
+https://iwankoenderman.com/index.html https://iwankoenderman.com/:splat 301!
+
+
+
+
+

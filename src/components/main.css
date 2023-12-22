@@ -1,0 +1,529 @@
+.flexThisBox {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main{
+  flex: 1 0 auto;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Clear Sans";
+  line-height: 1.66666666;
+  font-weight: normal;
+  text-align: left;
+  }
+
+a {
+    color: #0275d8;
+    text-decoration: none;
+  }
+
+a:hover {
+    color: white;
+  }
+
+.mainblock {
+  background-color: white;
+  color: black;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 1.0875rem 1.45rem;
+}
+.mainblockhero{
+  background-color: #2b3647;
+  color: white;
+}
+
+.landingblock {
+  background-color: #b22222;
+  color: black;
+}
+
+.footerblock {
+  background-color: #d4d4d4;
+  color: black;
+}
+
+.mainblock__hoofdrow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.mainblock__hoofdrow--heading {
+   font-size: 20px;
+   color: #7d7fa4;
+}
+
+.mainblock__hoofdrow--fold {
+  color: black;
+  line-height: 0.5;
+}
+
+.mainblock__hoofdrow--normaal {
+  color: black;
+}
+
+.mainblock__hoofdrow--calltoaction {
+text-align: center;
+padding-top: 30px;
+}
+
+.mainblock__hoofdrow__column1 {
+  float: left;
+  width: 50%;
+}
+
+.mainblock__hoofdrow__column1--normaal {
+  padding: 10px;
+}
+
+
+.mainblock__hoofdrow__column1--onlydesktopadreslinks {
+  color: black;
+  height: 100%;
+}
+
+.mainblock__hoofdrow__column1--onlydesktopadreslinks a {
+  color: black;    
+  text-shadow: none; 
+  text-decoration: none;  
+}  
+
+.mainblock__pakket{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.mainblock__pakket__column1 {
+  float: left;
+  width: 97%;
+ 
+}
+
+.mainblock__pakket__column2 {
+  float: left;
+  width: 33%; 
+}
+
+.mainblock__pakket__column3 {
+  float: left;
+  width: 60%; 
+}
+
+.mainblock__pakket__column2--normaal1{
+  height: 100%;
+  border-style: solid;
+  border-color:	#C0C0C0;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 15px;
+  font-weight: bold;
+  background-color: #adD8E6;
+}
+
+.mainblock__pakket__column2--normaal2{
+  height: 100%;
+  border-style: solid;
+  border-color:	#C0C0C0;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 15px;
+  font-weight: bold;
+  background-color:  #87ceeb;
+}
+
+.mainblock__pakket__column2--normaal3{
+  height: 100%;
+  border-style: solid;
+  border-color:	#C0C0C0;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 15px;
+  font-weight: bold;
+  background-color: #87CEFA;
+}
+
+.mainblock__pakket__column2--failure{
+  height: 100%;
+  border-style: solid;
+  border-color:	#C0C0C0;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 15px;
+  font-weight: bold;
+  background-color: white;
+}
+
+.maildesklink{
+  font-size: 25px;
+  text-decoration: none;
+  color: #7d7fa4;
+}
+
+a.maildesklink{
+  color:  #7d7fa4;
+  font-weight: bolder;
+}
+
+.myadresgegsvg {
+  width: 128px;
+  height: 128px;
+}
+
+p.tweedetitel {
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+/*topmenu */
+.top-menu {
+  background-color: #b22222;
+  padding: 0px 50px 0px 50px;
+  user-select: none;
+}
+
+.footer-menu {
+  background-color: #343a40 ;
+  padding: 20px 50px 20px 50px;
+  user-select: none;
+}
+
+.top-menu > .right {
+  float: right;
+  color: white;
+}
+
+.top-menu > .right > * {
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.top-menu > .left {
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.top-menu > .left > * {
+  margin-right: 5px;
+}
+
+.top-menu > .left > *, .top-menu > .right > * {
+  padding: 11.4px;
+  display: inline-block;
+  text-align: center;
+  min-width: 50px;
+}
+
+.top-menu *:hover{
+  cursor: pointer;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+.top-menu .top-menu-icon {
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  color: white;
+  Font-size: 20px;
+  font-weight: bold;
+}
+
+.top-menu-item {
+  color: white;
+}
+
+.top-menu-item:hover {
+  background-color: #9cd6f0;
+}
+
+.top-menu-lead {
+  padding: 10px;
+  background-color:   #ff4500;
+  color: white;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 2px solid    #ff4500;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.top-menu-leadland{
+  padding: 20px;
+  background-color:   #b22222;
+  color: white;
+  float: right;
+  font-size: 20px;
+}
+
+.top-menu-lead:hover {
+  background-color:  white;
+  color:  #ff4D00;
+  }
+
+.block {
+  background-color: #b22222;
+}
+
+.social  {
+  text-align: center;
+}
+a.social {
+    margin: 0 0.5rem;
+    transition: transform 250ms;
+    display: inline-block;
+  }
+
+  a.social:hover {
+    transform: translateY(-2px);
+  }
+
+  a.linkedin {
+    color:#eee;
+  }
+
+  a.facebook {
+    color: #eee;
+  }
+  
+  a.twitter {
+    color: #eee;
+  }
+  
+  a.instagram {
+    color: #eee;
+  }
+
+  a.instagram {
+    color: #eee;
+  }
+
+  /* footer */
+  .footerblock {
+    background-color: #343a40;
+    font-weight: bolder;
+    min-height: 50px;
+  }
+
+  .footerblock__row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .footerblock__row__column{
+    float: left;
+    width: 33.3333%;
+  }
+
+  .footerblock__row__column--footer {
+    height: 200px;
+    text-align: left;
+    padding:20px;
+  }
+
+
+  .footerenkelblock {
+    float: left;
+    width: 100%;
+  }
+  .footerenkelblock--footerlegerow {
+    padding: 0px;
+    height: 15px;
+  }
+
+  .footerenkelblock--footergroterfont{
+    padding: 0px;
+    font-size: 25px;
+    height: 39px;
+  }
+  
+  .footerenkelblock--footernormaalfont {
+    padding: 0px;
+    color: white;
+    font-size: 18px;
+    height: 39px;
+    
+  }
+  
+  .footerenkelblock--footernormaalfontrightalignbold{
+  padding: 0px;
+  color: white;
+  text-align: right;
+  font-weight: bold;
+  height: 39px
+}
+
+.footerenkelblock--footergroterfont a{
+  color: white;
+  text-decoration: none;     
+  font-size: 25px;
+}
+
+/* button */
+.button-cta {
+background-color:  #ff4500; /* Wit */
+border: none;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+margin: 4px 2px;
+color:   white;
+font-size: 20px;
+font-weight: bold;
+border-radius: 10px;
+border: 2px solid     #ff4500;
+transition-duration: 0.4s;
+cursor: pointer;
+}
+
+.button-cta:hover {
+background-color:  white;
+color:  #ff4D00;
+}
+
+iframe {
+  width: 100%;
+  height: 320px;
+}
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+  iframe {
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  iframe {
+    height: 480px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  iframe {
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  iframe {
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  iframe {
+    width: 100%;
+    height: 230px;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+.mainblock__hoofdrow__column1{
+   float: left;
+   width: 100%;
+}
+
+/*....*/
+
+
+.footerblock__row__column{ 
+  float: left;
+  width: 100%;
+}
+
+.mainblock__pakket__column2 {
+  float: left;
+  width: 100%;
+}
+
+.mainblock__pakket__column3 {
+  float: left;
+  width: 100%;
+}
+}
+
+  @media screen and (max-width: 1200px) {
+   
+.top-menu-lead {
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    float: none;
+}
+
+.top-menu {
+    padding: 40px 20px 20px 20px;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.top-menu > .left, .top-menu > .right {
+    display: none;
+}
+
+.top-menu-icon {
+    display: block !important;
+}
+
+.top-menu.toggled {
+    padding: 60px 0 0 0;
+    max-height: 1500px;
+    transition: max-height 1s;
+}
+
+.top-menu.toggled > .left {
+    border-bottom: 1px solid black;
+    margin: 15px 0 0 0 ;
+}
+
+.top-menu.toggled *:not(.top-menu-lead):not(.top-menu-icon) {
+    float: none;
+    display: block !important;
+    text-align: left;
+    margin: 0;
+}
+  }
+@media only screen and (max-width: 992px) {
+
+
+ div.mainblock__hoofdrow__column1--onlydesktopadreslinks{
+    display: none;
+  }    
+}
+@media only screen and (max-width: 768px) {
+
+ 
+  }
+@media only screen and (min-width: 992px) {
+div.mainblock__hoofdrow__column1--mobiel {
+        display: none;
+}
+}
+@media only screen and (min-width: 768px) {
+
+}
+
