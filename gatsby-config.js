@@ -138,13 +138,7 @@ module.exports = {
       `https://iwankoenderman.com/~partytown/debug/partytown-ww-atomics.js`,
     ],
     plugins: [   
-      {
-        resolve: `gatsby-plugin-preload-fonts`,
-        options: {
-          crossOrigin: pathname =>
-            pathname.match(/^\/elevated/) ? `use-credentials` : `anonymous`,
-        },   
-      },
+     
       {
         resolve: 'gatsby-plugin-exclude',
         options:  { paths: ['/en/**', '!/en/', '!/en/thanksebook', '!/en/privacystatementandcookiepolicy/',  '!/en/videoreviewenglish/', '!/en/termandconditions/', '!/en/introductionvideoiwankoenderman', '!/en/linktreefromcoachiwankoenderman', '/nl/**',                                   
