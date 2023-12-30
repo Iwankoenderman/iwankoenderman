@@ -57,11 +57,11 @@ module.exports = {
           value: `cross-origin`,
         },
         {
-          key: `cross-origin-opener-policy-Report-Only `,
+          key: `cross-origin-opener-policy`,
           value: `same-origin`,
         },
         {
-          key: `cross-origin-embedder-policy-Report-Only `,
+          key: `cross-origin-embedder-policy`,
           value: `credentialless`,  
         },
         {
