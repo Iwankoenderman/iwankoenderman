@@ -62,7 +62,7 @@ module.exports = {
         },
         {
           key: `cross-origin-embedder-policy`,
-          value: `credentialless`,  
+          value: `require corp`,  
         },
         {
           key: `accept-language`,
