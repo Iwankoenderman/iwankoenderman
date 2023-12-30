@@ -6,7 +6,7 @@ exports.onPreBuild = async ({ actions: { createRedirect } })=> {
   await copyLibFiles(path.join(__dirname, "static", "~partytown"));
 
   createRedirect({
-    fromPath:  `/__third-party-proxy?url=https://www.googletagmanager.com/gtag/js?id=${gtmTrackingId}`,
+    fromPath:  `/__third-party-proxy?url=https://www.googletagmanager.com/ns.html?id=${gtmTrackingId}`,
     toPath: `https://www.googletagmanager.com/gtag/js?id=${gtmTrackingId}`,
     statusCode: 200,
   })
