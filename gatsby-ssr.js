@@ -1,5 +1,6 @@
 import React from "react"
 import { Partytown } from '@builder.io/partytown/react';
+import { Script } from "gatsby"
 
 const ORIGIN = "https://www.googletagmanager.com";
 const gtmTrackingId = process.env.GATSBY_GTM_MEASUREMENT_ID
@@ -21,6 +22,12 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
       })(window,document,'script','dataLayer','${gtmTrackingId}');`,
     }}
     />,
+    <Script id="gtm-init" strategy="off-main-thread">
+  {`
+    window.dataLayer = window.dataLayer || []
+    window.dataLayer.push({ 'gtm.start': new Date().getTime(), 'event': 'gtm.js' })
+  `}
+</Script>,
     <script
     key="partytown-vanilla-config"
     dangerouslySetInnerHTML={{
