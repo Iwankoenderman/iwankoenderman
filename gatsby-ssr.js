@@ -10,7 +10,6 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
    setHtmlAttributes({ lang: [`nl`], })
    setHeadComponents([
     <Partytown key="partytown" debug={true} forward={['dataLayer.push']} />,
-    <script key="google-tag-manager" type="text/partytown" src={`${ORIGIN}/gtm.js?id=${gtmTrackingId}`} />,
     <script 
     key="analytics" 
     type="text/partytown"
