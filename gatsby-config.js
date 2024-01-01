@@ -138,7 +138,7 @@ module.exports = {
       `https://iwankoenderman.com/~partytown/debug/partytown-ww-atomics.js`,
     ],
     plugins: [   
-     
+      `gatsby-plugin-preload-fonts`,    
       {
         resolve: 'gatsby-plugin-exclude',
         options:  { paths: ['/en/**', '!/en/', '!/en/thanksebook', '!/en/privacystatementandcookiepolicy/',  '!/en/videoreviewenglish/', '!/en/termandconditions/', '!/en/introductionvideoiwankoenderman', '!/en/linktreefromcoachiwankoenderman', '/nl/**',                                   

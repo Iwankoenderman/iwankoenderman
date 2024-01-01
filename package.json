@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "preload-fonts": "gatsby-preload-fonts"
   },
   "dependencies": {
     "@builder.io/partytown": "^0.8.1",
@@ -22,7 +23,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@loadable/component": "^5.16.2",
-    "@mdx-js/react": "^3.0.0",
+    "@mdx-js/react": "^2.3.0",
     "@react-hook/intersection-observer": "^3.1.1",
     "dotenv": "^16.3.1",
     "gatsby": "^5.13.1",
@@ -34,6 +35,7 @@
     "gatsby-plugin-mdx": "^5.13.0",
     "gatsby-plugin-offline": "^6.13.0",
     "gatsby-plugin-preact": "^7.13.0",
+    "gatsby-plugin-preload-fonts": "^4.13.0",
     "gatsby-plugin-robots-txt": "^1.8.0",
     "gatsby-plugin-security-txt": "^1.2.1",
     "gatsby-plugin-sharp": "^5.13.0",
