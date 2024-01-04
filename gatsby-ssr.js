@@ -13,6 +13,7 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
     <Script
     key="analytics" 
     type="text/partytown"
+    strategy="off-main-thread"
     dangerouslySetInnerHTML={{
       __html:`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -27,7 +28,7 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
     window.dataLayer.push({ 'gtm.start': new Date().getTime(), 'event': 'gtm.js' })
   `}
 </Script>,
-       <Script
+       <script
     key="partytown-vanilla-config"
     dangerouslySetInnerHTML={{
       __html: `partytown = {
