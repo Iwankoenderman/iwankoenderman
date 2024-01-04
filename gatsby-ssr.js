@@ -10,7 +10,7 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
    setHtmlAttributes({ lang: [`nl`], })
    setHeadComponents([
     <Partytown key="partytown" debug={true} forward={['dataLayer.push']} />,
-    <script 
+    <Script
     key="analytics" 
     type="text/partytown"
     dangerouslySetInnerHTML={{
@@ -27,7 +27,7 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
     window.dataLayer.push({ 'gtm.start': new Date().getTime(), 'event': 'gtm.js' })
   `}
 </Script>,
-    <script
+       <Script
     key="partytown-vanilla-config"
     dangerouslySetInnerHTML={{
       __html: `partytown = {
