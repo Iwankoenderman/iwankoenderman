@@ -160,7 +160,8 @@ module.exports = {
         sitemap: 'https://iwankoenderman.com/sitemap-index.xml',
         policy: [
           {
-            userAgent: '*', 
+            userAgent: '*',
+            allow: ['/'],
             disallow: ['/privacystatementandcookiepolicy/', '/termandconditions/', '/thanksebook/', '/bedanktebook/', '/en/404.html', '/en/404']
           }
           ],
@@ -171,7 +172,7 @@ module.exports = {
             policy: [
               {
               userAgent: '*', 
-               Disallow: ['/privacystatementandcookiepolicy/', '/termandconditions/', '/thanksebook/', '/bedanktebook/', '/en/404.html', '/en/404', '/__third-party-proxy/*', '/static/*', '/~partytown/*', '/en/404.html']
+               disallow: ['/privacystatementandcookiepolicy/', '/termandconditions/', '/thanksebook/', '/bedanktebook/', '/en/404.html', '/en/404', '/__third-party-proxy/*', '/static/*', '/~partytown/*', '/en/404.html']
               }
             ]
           },
