@@ -18,6 +18,7 @@ export const Seo = ({ title, description, nlhrefurl, enhrefurl, pathname, lang, 
       <html lang={seo.lang} />
       <title>{seo.title}</title>
       <link rel="canonical" href={seo.nlhrefurl}/>
+      <meta name="robots" content="all"></meta>
       <meta name="description" content={seo.description} id="title" />
       <meta name="image" content={seo.image} id="image"/>
       <meta name="twitter:card" content="summary_large_image" id="image2"/>

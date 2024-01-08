@@ -150,7 +150,7 @@ module.exports = {
         {
       resolve: 'gatsby-plugin-sitemap',
       options: {
-        excludes: ['/privacystatementandcookiepolicy/', '/termandconditions/', '/thanksebook/', '/bedanktebook/', '/en/404.html', '/en/404' ]
+        excludes: ['/privacystatementandcookiepolicy/', '/termandconditions/', '/thanksebook/', '/bedanktebook/']
       }
       },
     {
