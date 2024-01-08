@@ -75,8 +75,10 @@ const intl = useIntl();
                        <div className='footerblock__row__column--footer'>
                               <div className='footerenkelblock--footerlegerow'>
                               </div>
-                                   <StaticImage
+                              <StaticImage
                                   src = "../images/Iwan-Koenderman-kl10.jpg" 
+                                  titel = "Zwart wit foto van Ir. Iwan Koenderman | Online Business Coach  Online Profiler Blogger Photographer."
+                                  aria-label= "Zwart wit foto van Ir. Iwan Koenderman | Online Business Coach  Online Profiler Blogger Photographer."
                                   alt = "Zwart wit foto van Ir. Iwan Koenderman | Online Business Coach  Online Profiler Blogger Photographer."
                                   placeholder="blurred"
                                   layout="fixed"

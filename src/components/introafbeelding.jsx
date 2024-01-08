@@ -12,9 +12,9 @@ export default function Introafbeeelding() {
                                               <div className='mainblock__pakket__column2--failure'>
                                               <StaticImage
                                                 src = "../images/eenslaginderondtewerken.png"
-                                                titel = {`${"Weergave van je een slag in de rondte werken"}`}
-                                                aria-label=  {`${"Weergave van je een slag in de rondte werken"}`}
-                                                alt = {`${"Weergave van je een slag in de rondte werken"}`}
+                                                titel = "Weergave van je een slag in de rondte werken"
+                                                aria-label="Weergave van je een slag in de rondte werken"
+                                                alt = "Weergave van je een slag in de rondte werken"
                                                 placeholder="blurred"
                                                 layout="fixed"
                                                 height ={200}
@@ -28,9 +28,9 @@ export default function Introafbeeelding() {
                                                  {intl.locale === "nl" ? (
                                                    <StaticImage
                                                    src = "../images/jeverdientnietgenoegeuro.png"
-                                                   titel = {`${"Weergave van niet genoeg euro verdienen"}`}
-                                                   aria-label=  {`${"Weergave van niet genoeg euro verdienen"}`}
-                                                   alt = {`${"Weergave van niet genoeg euro verdienen"}`}
+                                                   titel = "Weergave van niet genoeg euro verdienen"
+                                                   aria-label= "Weergave van niet genoeg euro verdienen"
+                                                   alt = "Weergave van niet genoeg euro verdienen"
                                                    placeholder="blurred"
                                                    layout="fixed"
                                                    height ={200}
@@ -39,9 +39,9 @@ export default function Introafbeeelding() {
                                                  ) : (
                                                   <StaticImage
                                                    src = "../images/youdonotearnenoughmoney.png"
-                                                   titel = {`${"Display of not earning enough dollars"}`}
-                                                   aria-label=  {`${"Display of not earning enough dollars"}`}
-                                                   alt = {`${"Display of not earning enough dollars"}`}
+                                                   titel = "Display of not earning enough dollars"
+                                                   aria-label="Display of not earning enough dollars"
+                                                   alt = "Display of not earning enough dollars"
                                                    placeholder="blurred"
                                                    layout="fixed"
                                                    height ={200}
@@ -55,9 +55,9 @@ export default function Introafbeeelding() {
                                               <div className='mainblock__pakket__column2--failure'>
                                               <StaticImage
                                                 src = "../images/jebentnietonlinezichtbaar.png"
-                                                titel = {`${"Weergave van je niet online zichtbaar zijn"}`}
-                                                aria-label=  {`${"Weergave van je niet online zichtbaar zijn"}`}
-                                                alt= {`${"Weergave van je niet online zichtbaar zijn"}`}
+                                                titel ="Weergave van je niet online zichtbaar zijn"
+                                                aria-label="Weergave van je niet online zichtbaar zijn"
+                                                alt="Weergave van je niet online zichtbaar zijn"
                                                 placeholder="blurred"
                                                 layout="fixed"
                                                 height ={200}

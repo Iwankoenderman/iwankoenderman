@@ -150,27 +150,24 @@ module.exports = {
         {
       resolve: 'gatsby-plugin-sitemap',
       options: {
-        excludes: ['/privacystatementandcookiepolicy/', '/termandconditions/', '/thanksebook/', '/bedanktebook/', '/en/404.html', '/en/404' ]
+        excludes: ['/privacystatementandcookiepolicy/', '/videoreviewenglish/', '/termandconditions/', '/thanksebook/', '/introductionvideoiwankoenderman/', '/en/404.html', '/en/404' ]
       }
       },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://iwankoenderman.com',
-        sitemap: 'https://iwankoenderman.com/sitemap-index.xml',
-        policy: [{userAgent: '*', disallow: ['/privacystatementandcookiepolicy/', '/termandconditions/', '/thanksebook/', '/bedanktebook/', '/en/404.html', '/en/404']}],
         resolveEnv: () => NETLIFY_ENV,
         env: {
           production: {
-            policy: [{userAgent: '*', Disallow: ['/privacystatementandcookiepolicy/', '/termandconditions/', '/thanksebook/', '/bedanktebook/', '/en/404.html', '/en/404', '/__third-party-proxy/*', '/static/*', '/~partytown/*', '/en/404.html']}]
+            policy: [{userAgent: '*', Disallow: ['/__third-party-proxy/*', '/static/*', '/~partytown/*', '/en/404.html']}]
           },
           'branch-deploy': {
-            policy: [{userAgent: '*', disallow: ['/privacystatementandcookiepolicy/', '/termandconditions/', '/thanksebook/', '/bedanktebook/', '/en/404.html', '/en/404']}],
+            policy: [{userAgent: '*', disallow: ['/']}],
             sitemap: null,
             host: null
           },
           'deploy-preview': {
-            policy: [{userAgent: '*', disallow: ['/privacystatementandcookiepolicy/', '/termandconditions/', '/thanksebook/', '/bedanktebook/', '/en/404.html', '/en/404']}],
+            policy: [{userAgent: '*', disallow: ['/']}],
             sitemap: null,
             host: null
           }
