@@ -158,19 +158,40 @@ module.exports = {
       options: {
         host: 'https://iwankoenderman.com',
         sitemap: 'https://iwankoenderman.com/sitemap-index.xml',
-        policy: [{userAgent: '*', disallow: '/privacystatementandcookiepolicy/', disallow: '/termandconditions/', disallow: '/thanksebook/', disallow: '/bedanktebook/', disallow: '/en/404.html', disallow: '/en/404'}],
+        policy: [
+          {
+            userAgent: '*', 
+            disallow: ['/privacystatementandcookiepolicy/', '/termandconditions/', '/thanksebook/', '/bedanktebook/', '/en/404.html', '/en/404']
+          }
+          ],
+        
         resolveEnv: () => NETLIFY_ENV,
         env: {
           production: {
-            policy: [{userAgent: '*', disallow: '/privacystatementandcookiepolicy/', disallow:'/termandconditions/', disallow:'/thanksebook/', disallow:'/bedanktebook/', disallow:'/en/404.html', disallow:'/en/404', disallow:'/__third-party-proxy/*', disallow:'/static/*', disallow:'/~partytown/*', disallow:'/en/404.html'}]
+            policy: [
+              {
+              userAgent: '*', 
+               Disallow: ['/privacystatementandcookiepolicy/', '/termandconditions/', '/thanksebook/', '/bedanktebook/', '/en/404.html', '/en/404', '/__third-party-proxy/*', '/static/*', '/~partytown/*', '/en/404.html']
+              }
+            ]
           },
           'branch-deploy': {
-            policy: [{userAgent: '*', disallow: '/privacystatementandcookiepolicy/', disallow:'/termandconditions/', disallow:'/thanksebook/', disallow:'/bedanktebook/', disallow:'/en/404.html', disallow:'/en/404'}],
-            sitemap: null,
-            host: null
+            policy: [
+              {
+                userAgent: '*', 
+                disallow: ['/privacystatementandcookiepolicy/', '/termandconditions/', '/thanksebook/', '/bedanktebook/', '/en/404.html', '/en/404']
+              }
+              ],
+                sitemap: null,
+                host: null
           },
           'deploy-preview': {
-            policy: [{userAgent: '*', disallow: '/privacystatementandcookiepolicy/', disallow:'/termandconditions/', disallow:'/thanksebook/', disallow:'/bedanktebook/', disallow:'/en/404.html', disallow:'/en/404'}],
+            policy: [ 
+              {
+                userAgent: '*', 
+                disallow: ['/privacystatementandcookiepolicy/', '/termandconditions/', '/thanksebook/', '/bedanktebook/', '/en/404.html', '/en/404']
+              }
+            ],
             sitemap: null,
             host: null
           }
