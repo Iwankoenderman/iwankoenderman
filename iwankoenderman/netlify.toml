@@ -1,6 +1,0 @@
-[[redirects]]
-  from = "/__third-party-proxy?url=https://www.googletagmanager.com/gtag/js?id=GTM-KKM6ZM7"
-  to = "https://www.googletagmanager.com/gtag/js?id=GTM-KKM6ZM7:splat"
-  status = 200
-  force = true
-

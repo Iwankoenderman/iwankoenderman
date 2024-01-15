@@ -197,15 +197,15 @@ return (
                                                    <div className='mainblock__pakket__column2--normaal2'>
                                                         <Pakketkolom 
                                                         headrownl    = "Het-overzichtelijk-meer-klanten-online-plan"
-                                                        pakketrow1nl = "✔ Jouw duidelijke boodschap,"
-                                                        pakketrow2nl = "✔ die je kunt inzetten in een heldere social media strategie, die klanten oplevert," 
-                                                        pakketrow3nl = "✔ en waarmee je jouw expertise op jouw authentieke manier kunt claimen!"
+                                                        pakketrow1nl = "✔ Jouw duidelijke boodschap, geformuleerd vanuit je why, passie, drijfveer."
+                                                        pakketrow2nl = "✔ Authentieke content die de waarde die je aan je klanten biedt, laat zien." 
+                                                        pakketrow3nl = "✔ Heldere social media strategie, waarmee je klanten kunt krijgen!"
                                                         pakketrow4nl = "✔ 1 op 1 coaching," 
                                                         pakketrow5nl = "✔ 5 zoomsessies begeleiding,"
                                                         headrowen    = "The-clear-more-clients-online-plan"
-                                                        pakketrow1en = "✔ Your clear message,"
-                                                        pakketrow2en = "✔ that you can use in a clear social media strategy that generates clients,"
-                                                        pakketrow3en = "✔ and with which you can claim your expertise in your authentic way!"
+                                                        pakketrow1en = "✔ Your clear message, formulated from your why, passion, and drive"
+                                                        pakketrow2en = "✔ Authentic content showcasing the value you deliver to your clients"
+                                                        pakketrow3en = "✔ Clear social media strategy to attract clients!"
                                                         pakketrow4en = "✔ 1 on 1 coaching,"
                                                         pakketrow5en = "✔ Guidance in 5 zoom sessions." />
                                                         <Ctabutton
