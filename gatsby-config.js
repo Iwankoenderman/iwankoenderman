@@ -123,6 +123,8 @@ module.exports = {
     Instagrampersarialabel: "mijn instagram bedrijfsprofiel",
     Linkedinpers: "https://www.linkedin.com/in/iwan-koenderman-623b7133/",
     Linkedinpersarialabel: "mijn linkedin pagina iwan-koenderman",
+    Tiktokpers: "https://www.tiktok.com/@iwankoenderman?lang=nl-NL",
+    Tiktokpersarialabel: "mijn tiktok bedrijfsprofiel",
     sloganbedrijfalt: "|Online Business Coach Online Profiler Blogger Photographer",
     twitterUsername: "@IwanKoenderman",
     mailAdres: "mailto:info@iwankoenderman.com",

@@ -29,6 +29,8 @@ export const useSiteMetadata = () => {
             Instagrampersarialabel
             Linkedinpers
             Linkedinpersarialabel
+            Tiktokpers
+            Tiktokpersarialabel
             Kvknr
             BTWVat
             BankRekNR

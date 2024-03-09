@@ -408,6 +408,28 @@ background-color:  white;
 color:  #ff4D00;
 }
 
+.button-cta-linktree {
+  background-color:  #2b3647; /* Wit */
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  color:   white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 2px solid     #2b3647;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  }
+  
+  .button-cta:hover {
+  background-color:  white;
+  color:  #2b3647;
+  }
+
 iframe {
   width: 100%;
   height: 320px;

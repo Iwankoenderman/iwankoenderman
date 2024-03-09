@@ -187,27 +187,53 @@ return (
                                           <div className='mainblock__pakket'>
                                                <div className='mainblock__pakket__column2'> 
                                                    <div className='mainblock__pakket__column2--normaal1'>
-                                                        <Pakketkolom 
-                                                        />
-                                                        
+                                                   <Pakketkolom 
+                                                        headrownl    = "Het-overzichtelijk-meer-klanten-online-plan-instap"
+                                                        pakketrow1nl = "✔ Jouw duidelijke boodschap, geformuleerd vanuit je why, passie, drijfveer."
+                                                        pakketrow2nl = ""
+                                                        pakketrow3nl = ""
+                                                        pakketrow4nl = "✔ 1 op 1 coaching," 
+                                                        pakketrow5nl = "✔ 3 zoomsessies begeleiding,"
+                                                        pakketrow6nl = "✔ Uitbreidbaar met extra zoomsessies indien meer diepgang gewenst is (meerprijs)" 
+                                                        pakketrow7nl = "€ 349,00 excl. BTW"
+                                                        headrowen    = "The-straightforward-more-clients-online-plan-entry-level"
+                                                        pakketrow1en = "✔ Your clear message, formulated from your why, passion, and drive."  
+                                                        pakketrow2en = ""                                           
+                                                        pakketrow3en = "" 
+                                                        pakketrow4en = "✔ 1 on 1 coaching,"
+                                                        pakketrow5en = "✔ Guidance in 3 zoom sessions."
+                                                        pakketrow6en = "✔ Expandable with additional Zoom sessions if more depth is desired (additional cost)."
+                                                        pakketrow7en = "€ 349,00 excl. VAT" />
+                                                        <Ctabutton
+                                           Urlnl="https://meetings.hubspot.com/iwan-koenderman"
+                                           Urlen="https://meetings.hubspot.com/iwan-koenderman"
+                                           Arlabnl="Plan zoomgesprek"
+                                           Arlaben="Schedule zoom call"
+                                           ButTxtnl="Plan zoomgesprek"
+                                           ButTxten="Schedule zoom call"/>  
+                                                  
                                                   </div>
                                               </div>       
                                        
                                                <div className='mainblock__pakket__column2'> 
                                                    <div className='mainblock__pakket__column2--normaal2'>
                                                         <Pakketkolom 
-                                                        headrownl    = "Het-overzichtelijk-meer-klanten-online-plan"
+                                                        headrownl    = "Het-overzichtelijk-meer-klanten-online-plan-voorbereidend"
                                                         pakketrow1nl = "✔ Jouw duidelijke boodschap, geformuleerd vanuit je why, passie, drijfveer."
-                                                        pakketrow2nl = "✔ Authentieke content die de waarde die je aan je klanten biedt, laat zien." 
-                                                        pakketrow3nl = "✔ Heldere social media strategie, waarmee je klanten kunt krijgen!"
-                                                        pakketrow4nl = "✔ 1 op 1 coaching," 
-                                                        pakketrow5nl = "✔ 5 zoomsessies begeleiding,"
-                                                        headrowen    = "The-clear-more-clients-online-plan"
-                                                        pakketrow1en = "✔ Your clear message, formulated from your why, passion, and drive"
-                                                        pakketrow2en = "✔ Authentic content showcasing the value you deliver to your clients"
-                                                        pakketrow3en = "✔ Clear social media strategy to attract clients!"
+                                                        pakketrow2nl = "✔ + Heldere social media strategie, waarmee je klanten kunt krijgen!" 
+                                                        pakketrow3nl = ""
+                                                        pakketrow4nl = "✔ 1 op 1 coaching,"
+                                                        pakketrow5nl = "✔ 4 zoomsessies begeleidin." 
+                                                        pakketrow6nl = "✔ Uitbreidbaar met extra zoomsessies indien meer diepgang gewenst is (meerprijs)"
+                                                        pakketrow7nl = "€ 649,00 excl. BTW"
+                                                        headrowen    = "The-straightforward-more-clients-online-plan-preparatory"
+                                                        pakketrow1en = "✔ Your clear message, formulated from your why, passion, and drive."
+                                                        pakketrow2en = "✔ + Clear social media strategy to attract clients!"
+                                                        pakketrow3en = ""
                                                         pakketrow4en = "✔ 1 on 1 coaching,"
-                                                        pakketrow5en = "✔ Guidance in 5 zoom sessions." />
+                                                        pakketrow5en = "✔ Guidance in 4 zoom sessions."
+                                                        pakketrow6en = "✔ Expandable with additional Zoom sessions if more depth is desired (additional cost)."
+                                                        pakketrow7en = "€ 649,00 excl. VAT"/>
                                                         <Ctabutton
                                            Urlnl="https://meetings.hubspot.com/iwan-koenderman"
                                            Urlen="https://meetings.hubspot.com/iwan-koenderman"
@@ -220,8 +246,31 @@ return (
                                               
                                                <div className='mainblock__pakket__column2'> 
                                                    <div className='mainblock__pakket__column2--normaal3'>
-                                                        <Pakketkolom 
-                                                        />
+                                                   <Pakketkolom 
+                                                        headrownl    = "Het-overzichtelijk-meer-klanten-online-plan-ga-van-start"
+                                                        pakketrow1nl = "✔ Jouw duidelijke boodschap, geformuleerd vanuit je why, passie, drijfveer."
+                                                        pakketrow2nl = "✔ + Heldere social media strategie, waarmee je klanten kunt krijgen!" 
+                                                        pakketrow3nl = "✔ ++ Authentieke content waarmee je de waarde die je aan je klanten biedt, kunt laten zien." 
+                                                        pakketrow4nl = "✔ 1 op 1 coaching,"
+                                                        pakketrow5nl = "✔ 5 zoomsessies begeleiding," 
+                                                        pakketrow6nl = "✔ Uitbreidbaar met extra zoomsessies indien meer diepgang gewenst is (meerprijs)."
+                                                        pakketrow7nl = "€ 1149,00 excl. BTW"
+                                                        headrowen    = "The-straightforward-more-clients-online-plan-is-getting-started"
+                                                        pakketrow1en = "✔ Your clear message, formulated from your why, passion, and drive."
+                                                        pakketrow2en = "✔ + Clear social media strategy to attract clients!"
+                                                        pakketrow3en = "✔ ++ Authentic content showcasing your value to clients."
+                                                        pakketrow4en = "✔ 1 on 1 coaching,"
+                                                        pakketrow5en = "✔ Guidance in 5 zoom sessions."
+                                                        pakketrow6en = "✔ Expandable with additional Zoom sessions if more depth is desired (additional cost)." 
+                                                        pakketrow7en = "€ 1149,00 excl. VAT"/>
+                                                        <Ctabutton
+                                           Urlnl="https://meetings.hubspot.com/iwan-koenderman"
+                                           Urlen="https://meetings.hubspot.com/iwan-koenderman"
+                                           Arlabnl="Plan zoomgesprek"
+                                           Arlaben="Schedule zoom call"
+                                           ButTxtnl="Plan zoomgesprek"
+                                           ButTxten="Schedule zoom call"/>  
+                                                  
                                                        
                                                   </div>
                                               </div>
