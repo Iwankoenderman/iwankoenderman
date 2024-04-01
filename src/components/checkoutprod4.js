@@ -21,7 +21,7 @@ const buttonDisabledStyles = {
 let stripePromise
 const getStripe = () => {
   if (!stripePromise) {
-    stripePromise = loadStripe("pk_test_51H04cHDv8KZeguAt2v86plT5Sb4kV2skoKgctXAs3AIjnxqr91uXmh3dCcVZijql8xcBXLnAniL25CiPvu6MRBab00KeL2oEWP")
+    stripePromise = loadStripe("pk_live_51H04cHDv8KZeguAtqhQ5RiA6mJgcXeQt7mg9uQ5CVFaSfvIkRZtqgFUfY50Bu5GoffWhLf0GoyHEcQyFtsvHGONt00KctnmJkY")
   }
   return stripePromise
 }
@@ -37,7 +37,7 @@ const Checkoutprod5 = () => {
     const { error } = await stripe.redirectToCheckout({
       mode: "payment",
       lineItems: [{ price: "price_1OyHJ8Dv8KZeguAtbtjgWEe4", quantity: 1 }],
-      successUrl: `https://share.hsforms.com/1ex8rAlGzSkm9KLvtUl3QlA2vk8s`,
+      successUrl: `https://share.hsforms.com/1ex8rAlGzSkm9KLvtUl3QlA2vk8s/`,
       cancelUrl: `https://iwankoenderman.com/en/cancelpaymnent/`,
     })
 
