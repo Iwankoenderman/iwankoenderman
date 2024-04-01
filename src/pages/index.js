@@ -219,13 +219,7 @@ return (
                                                         pakketrow5en = "✔ Guidance in 3 zoom sessions."
                                                         pakketrow6en = "✔ Expandable with additional Zoom sessions if more depth is desired (additional cost)."
                                                         pakketrow7en = "€ 349,00 excl. VAT" />
-                                                        <Ctabutton
-                                           Urlnl="https://share.hsforms.com/1cZxrO-1DQfGdhTw5LLwgWQ2vk8s"
-                                           Urlen="https://share.hsforms.com/1dPLCLGxHQpqjy19bxLLJpA2vk8s"
-                                           Arlabnl="ja ik start en betaal"
-                                           Arlaben="yes, I'll start and pay"
-                                           ButTxtnl="ja ik start en betaal"
-                                           ButTxten="yes, I'll start and pay"/>  
+                                                        {intl.locale === "nl" ? (<Checkoutprod1/>) : (<Checkoutprod4/>)} 
                                                   
                                                   </div>
                                               </div>       
@@ -256,13 +250,7 @@ return (
                                                         pakketrow5en = "✔ Guidance in 4 zoom sessions."
                                                         pakketrow6en = "✔ Expandable with additional Zoom sessions if more depth is desired (additional cost)."
                                                         pakketrow7en = "€ 649,00 excl. VAT"/>
-                                                        <Ctabutton
-                                           Urlnl="https://share.hsforms.com/1yhnpuSPmTrSdve1ZeRlI_g2vk8s"
-                                           Urlen="https://share.hsforms.com/11tnHn5e8S2SyolNGS35gOg2vk8s"
-                                           Arlabnl="yes, I'll start and pay"
-                                           Arlaben="Schedule zoom call"
-                                           ButTxtnl="ja ik start en betaal"
-                                           ButTxten="yes, I'll start and pay"/>  
+                                                       {intl.locale === "nl" ? (<Checkoutprod2/>) : (<Checkoutprod5/>)}  
                                                   </div>
                                               </div>
                                               
@@ -292,13 +280,7 @@ return (
                                                         pakketrow5en = "✔ Guidance in 5 zoom sessions."
                                                         pakketrow6en = "✔ Expandable with additional Zoom sessions if more depth is desired (additional cost)." 
                                                         pakketrow7en = "€ 1149,00 excl. VAT"/>
-                                                        <Ctabutton
-                                           Urlnl=" https://share.hsforms.com/1nqLRxFVVQTS-jLRxkLRL5A2vk8s"
-                                           Urlen="https://share.hsforms.com/1mdFFJE6oQTGXKAOoUE18_w2vk8s"
-                                           Arlabnl="ja ik start en betaal"
-                                           Arlaben="yes, I'll start and pay"
-                                           ButTxtnl="ja ik start en betaal"
-                                           ButTxten="yes, I'll start and pay"/>  
+                                                        {intl.locale === "nl" ? (<Checkoutprod3/>) : (<Checkoutprod6/>)}   
                                                   
                                                        
                                                   </div>

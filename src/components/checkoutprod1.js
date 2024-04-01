@@ -55,7 +55,7 @@ const Checkoutprod1 = () => {
       }
       onClick={redirectToCheckout}   
     >
-      BETAAL PAKKET!
+      Ja ik start en betaal!
     </button>
   )
 }
