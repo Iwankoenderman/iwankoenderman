@@ -8,12 +8,6 @@ import { Link } from "gatsby"
 
 const Mylazyvideo = loadable(() => import('./mylazyvideo'));
 const Mylazyvideoenk = loadable(() => import('./mylazyvideoenk'));
-const Checkoutprod1 = loadable(() => import('./checkoutprod1'));
-const Checkoutprod2 = loadable(() => import('./checkoutprod2'));
-const Checkoutprod3 = loadable(() => import('./checkoutprod3'));
-const Checkoutprod5 = loadable(() => import('./checkoutprod5'));
-const Checkoutprod6 = loadable(() => import('./checkoutprod6'));
-const Checkoutprod7 = loadable(() => import('./checkoutprod7'));
 const Download  = loadable(() => import('./download'));
 const Ctabutton = loadable(() => import('./ctabutton'));
 
@@ -34,12 +28,6 @@ export default function Layoutlanding ({ children }) {
           Link,
           Ctabutton,
           Mylazyvideo,
-          Checkoutprod1,
-          Checkoutprod2,
-          Checkoutprod3,
-          Checkoutprod5,
-          Checkoutprod6,
-          Checkoutprod7,
           Mylazyvideoenk,
           Download}}>{children}</MDXProvider>
           </main>

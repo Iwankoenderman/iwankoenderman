@@ -37,7 +37,7 @@ const Checkoutprod1 = () => {
     const { error } = await stripe.redirectToCheckout({
       mode: "payment",
       lineItems: [{ price: "price_1OyH4ODv8KZeguAth4DlMDpy", quantity: 1 }],
-      successUrl: `https://iwankoenderman.com/planeerstezoomsessie/`,
+      successUrl: `https://share.hsforms.com/1BexRHwJSRB6i4sOKr-JbQQ2vk8s/`,
       cancelUrl: `https://iwankoenderman.com/breekbetalingaf/`,
     })
 

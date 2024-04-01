@@ -23,6 +23,14 @@ const Contact = loadable(() => import('../components/contact'));
 const Introafbeelding = loadable(() => import('../components/introafbeelding'));
 const Pakketkolom = loadable(() => import('../components/pakketkolom'));
 const Ctabutton = loadable(() => import('../components/ctabutton'));
+const Checkoutprod1 = loadable(() => import('../components/checkoutprod1'));
+const Checkoutprod2 = loadable(() => import('../components/checkoutprod2'));
+const Checkoutprod3 = loadable(() => import('../components/checkoutprod3'));
+const Checkoutprod4 = loadable(() => import('../components/checkoutprod4'));
+const Checkoutprod5 = loadable(() => import('../components/checkoutprod5'));
+const Checkoutprod6 = loadable(() => import('../components/checkoutprod6'));
+
+
 
 export default function IndexPage ({ location,}) {   
     const { sloganbedrijfalt, 

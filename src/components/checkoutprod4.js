@@ -26,7 +26,7 @@ const getStripe = () => {
   return stripePromise
 }
 
-const Checkoutprod7 = () => {
+const Checkoutprod5 = () => {
   const [loading, setLoading] = useState(false)
 
   const redirectToCheckout = async event => {
@@ -34,10 +34,10 @@ const Checkoutprod7 = () => {
     setLoading(true)
 
     const stripe = await getStripe()
-    const { error } = await stripe.redirectToCheckout({  
+    const { error } = await stripe.redirectToCheckout({
       mode: "payment",
-      lineItems: [{ price: "price_1OyHQCDv8KZeguAtLJDqAvaM", quantity: 1 }],
-      successUrl: `https://iwankoenderman.com/en/scedulefirstzoomsession/`,
+      lineItems: [{ price: "price_1OyHJ8Dv8KZeguAtbtjgWEe4", quantity: 1 }],
+      successUrl: `https://share.hsforms.com/1ex8rAlGzSkm9KLvtUl3QlA2vk8s`,
       cancelUrl: `https://iwankoenderman.com/en/cancelpaymnent/`,
     })
 
@@ -60,4 +60,4 @@ const Checkoutprod7 = () => {
   )
 }
 
-export default Checkoutprod7
+export default Checkoutprod5
