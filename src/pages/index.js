@@ -187,6 +187,13 @@ return (
                                           <div className='mainblock__pakket'>
                                                <div className='mainblock__pakket__column2'> 
                                                    <div className='mainblock__pakket__column2--normaal1'>
+                                                   <Ctabutton
+                                           Urlnl="https://meetings.hubspot.com/iwan-koenderman"
+                                           Urlen="https://meetings.hubspot.com/iwan-koenderman"
+                                           Arlabnl="Plan zoomgesprek"
+                                           Arlaben="Schedule zoom call"
+                                           ButTxtnl="Plan zoomgesprek"
+                                           ButTxten="Schedule zoom call"/>  
                                                    <Pakketkolom 
                                                         headrownl    = "Het-overzichtelijk-meer-klanten-online-plan-instap"
                                                         pakketrow1nl = "✔ Jouw duidelijke boodschap, geformuleerd vanuit je why, passie, drijfveer."
@@ -205,11 +212,11 @@ return (
                                                         pakketrow6en = "✔ Expandable with additional Zoom sessions if more depth is desired (additional cost)."
                                                         pakketrow7en = "€ 349,00 excl. VAT" />
                                                         <Ctabutton
-                                           Urlnl="https://meetings.hubspot.com/iwan-koenderman"
-                                           Urlen="https://meetings.hubspot.com/iwan-koenderman"
-                                           Arlabnl="Plan zoomgesprek"
+                                           Urlnl="https://share.hsforms.com/1cZxrO-1DQfGdhTw5LLwgWQ2vk8s"
+                                           Urlen="https://share.hsforms.com/1dPLCLGxHQpqjy19bxLLJpA2vk8s"
+                                           Arlabnl="ja ik start en betaal"
                                            Arlaben="Schedule zoom call"
-                                           ButTxtnl="Plan zoomgesprek"
+                                           ButTxtnl="ja ik start en betaal"
                                            ButTxten="Schedule zoom call"/>  
                                                   
                                                   </div>
@@ -217,6 +224,13 @@ return (
                                        
                                                <div className='mainblock__pakket__column2'> 
                                                    <div className='mainblock__pakket__column2--normaal2'>
+                                                   <Ctabutton
+                                           Urlnl="https://meetings.hubspot.com/iwan-koenderman"
+                                           Urlen="https://meetings.hubspot.com/iwan-koenderman"
+                                           Arlabnl="Plan zoomgesprek"
+                                           Arlaben="Schedule zoom call"
+                                           ButTxtnl="Plan zoomgesprek"
+                                           ButTxten="Schedule zoom call"/>  
                                                         <Pakketkolom 
                                                         headrownl    = "Het-overzichtelijk-meer-klanten-online-plan-voorbereidend"
                                                         pakketrow1nl = "✔ Jouw duidelijke boodschap, geformuleerd vanuit je why, passie, drijfveer."
@@ -235,17 +249,24 @@ return (
                                                         pakketrow6en = "✔ Expandable with additional Zoom sessions if more depth is desired (additional cost)."
                                                         pakketrow7en = "€ 649,00 excl. VAT"/>
                                                         <Ctabutton
-                                           Urlnl="https://meetings.hubspot.com/iwan-koenderman"
-                                           Urlen="https://meetings.hubspot.com/iwan-koenderman"
-                                           Arlabnl="Plan zoomgesprek"
+                                           Urlnl="https://share.hsforms.com/1cZxrO-1DQfGdhTw5LLwgWQ2vk8s"
+                                           Urlen="https://share.hsforms.com/11tnHn5e8S2SyolNGS35gOg2vk8s"
+                                           Arlabnl="ja ik start en betaal"
                                            Arlaben="Schedule zoom call"
-                                           ButTxtnl="Plan zoomgesprek"
+                                           ButTxtnl="ja ik start en betaal"
                                            ButTxten="Schedule zoom call"/>  
                                                   </div>
                                               </div>
                                               
                                                <div className='mainblock__pakket__column2'> 
                                                    <div className='mainblock__pakket__column2--normaal3'>
+                                                   <Ctabutton
+                                           Urlnl="https://meetings.hubspot.com/iwan-koenderman"
+                                           Urlen="https://meetings.hubspot.com/iwan-koenderman"
+                                           Arlabnl="Plan zoomgesprek"
+                                           Arlaben="Schedule zoom call"
+                                           ButTxtnl="Plan zoomgesprek"
+                                           ButTxten="Schedule zoom call"/>  
                                                    <Pakketkolom 
                                                         headrownl    = "Het-overzichtelijk-meer-klanten-online-plan-ga-van-start"
                                                         pakketrow1nl = "✔ Jouw duidelijke boodschap, geformuleerd vanuit je why, passie, drijfveer."
@@ -264,11 +285,11 @@ return (
                                                         pakketrow6en = "✔ Expandable with additional Zoom sessions if more depth is desired (additional cost)." 
                                                         pakketrow7en = "€ 1149,00 excl. VAT"/>
                                                         <Ctabutton
-                                           Urlnl="https://meetings.hubspot.com/iwan-koenderman"
-                                           Urlen="https://meetings.hubspot.com/iwan-koenderman"
-                                           Arlabnl="Plan zoomgesprek"
+                                           Urlnl="https://share.hsforms.com/1nqLRxFVVQTS-jLRxkLRL5A2vk8s"
+                                           Urlen="https://share.hsforms.com/1mdFFJE6oQTGXKAOoUE18_w2vk8s"
+                                           Arlabnl="ja ik start en betaal"
                                            Arlaben="Schedule zoom call"
-                                           ButTxtnl="Plan zoomgesprek"
+                                           ButTxtnl="ja ik start en betaal"
                                            ButTxten="Schedule zoom call"/>  
                                                   
                                                        

@@ -25,6 +25,8 @@
     "@loadable/component": "^5.16.3",
     "@mdx-js/react": "^2.3.0",
     "@react-hook/intersection-observer": "^3.1.1",
+    "@stripe/react-stripe-js": "^2.6.2",
+    "@stripe/stripe-js": "^3.0.10",
     "dotenv": "^16.4.1",
     "gatsby": "^5.13.3",
     "gatsby-plugin-csp-nonce": "^1.2.0",
