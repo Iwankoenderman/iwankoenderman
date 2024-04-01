@@ -145,14 +145,14 @@ module.exports = {
       `gatsby-plugin-webpack-bundle-analyser-v2`,    
       {
         resolve: 'gatsby-plugin-exclude',
-        options:  { paths: ['/en/**', '!/en/', '!/en/thanksebook', '!/en/privacystatementandcookiepolicy/',  '!/en/videoreviewenglish/', '!/en/termandconditions/', '!/en/introductionvideoiwankoenderman', '!/en/linktreefromcoachiwankoenderman', '/nl/**',                                   
+        options:  { paths: ['/en/**', '!/en/', '!/en/thanksebook', '!/en/privacystatementandcookiepolicy/',  '!/en/videoreviewenglish/', '!/en/termandconditions/', '!/en/introductionvideoiwankoenderman', '!/en/linktreefromcoachiwankoenderman', '!/en/cancelpayment', '!/en/thanksisgettingstartedchoice', '!/en/thankspreparatorychoice', '!/en/thanksentrylevelchoice','!/en/scedulefirstzoomsession','/nl/**',                                   
       ] },
      
       },   
         {
       resolve: 'gatsby-plugin-sitemap',
       options: {
-        excludes: ['/privacystatementandcookiepolicy/', '/termandconditions/', '/thanksebook/', '/bedanktebook/']
+        excludes: ['/privacystatementandcookiepolicy/', '/termandconditions/', '/thanksebook/', '/bedanktebook/', '/cancelpayment/', '/scedulefirstzoomsession/', '/thanksentrylevelchoice/', '/thankspreparatorychoice/', '/thanksisgettingstartedchoice/']
       }
       },
     {
