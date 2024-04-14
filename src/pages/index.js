@@ -43,7 +43,7 @@ return (
                   <Fold/> 
                   <Paragraafnormaal
                 paragraafnormaal1nl = "Bekijk mijn video."
-                paragraafnormaal1en = "Watchvideo."/> 
+                paragraafnormaal1en = "Watch video."/> 
                 <Emptyrow/>
                   
 
