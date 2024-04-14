@@ -46,7 +46,7 @@ module.exports = {
         },
         {
           key: `permissions-policy`,
-          value: `geolocation=(self "https://iwankoenderman.com"), microphone=()`,
+          value: `geolocation=(self "https://iwankoenderman.com"), microphone=(), unload()`,
         },
         {
           key: `x-frame-options`,
