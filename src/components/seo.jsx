@@ -2,12 +2,12 @@ import * as React from "react"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 
 export const Seo = ({ title, description, nlhrefurl, enhrefurl, pathname, lang, children }) => {
-  const { title: defaultTitle, description: defaultDescription, image, siteUrl, twitterUsername, nlhrefurl: defaultnlHrefurl, enhrefurl: defaultenHrefurl } = useSiteMetadata()
+  const { title: defaultTitle, description: defaultDescription, image, siteUrl, twitterUsername } = useSiteMetadata()
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
-    nlhrefurl: nlhrefurl || defaultnlHrefurl,
-    enhrefurl: enhrefurl || defaultenHrefurl,
+    nlhrefurl: nlhrefurl,
+    enhrefurl: enhrefurl,
     lang: lang,
     image: `${siteUrl}${image}`,
     url: `${siteUrl}${pathname || ``}`,
@@ -35,3 +35,4 @@ export const Seo = ({ title, description, nlhrefurl, enhrefurl, pathname, lang, 
   )
 }
 
+     
