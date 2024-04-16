@@ -2,12 +2,12 @@ import * as React from "react"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 
 export const Seo = ({ title, description, nlhrefurl, enhrefurl, pathname, lang, children }) => {
-  const { title: defaultTitle, description: defaultDescription, image, siteUrl, twitterUsername } = useSiteMetadata()
+  const { title: defaultTitle, description: defaultDescription, image, siteUrl, twitterUsername, nlhrefurl: defaultnlHrefurl, enhrefurl: defaultenHrefurl } = useSiteMetadata()
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
-    nlhrefurl: nlhrefurl,
-    enhrefurl: enhrefurl,
+    nlhrefurl: nlhrefurl || defaultnlHrefurl,
+    enhrefurl: enhrefurl || defaultenHrefurl,
     lang: lang,
     image: `${siteUrl}${image}`,
     url: `${siteUrl}${pathname || ``}`,
@@ -27,12 +27,11 @@ export const Seo = ({ title, description, nlhrefurl, enhrefurl, pathname, lang, 
       <meta name="twitter:description" content={seo.description} id="description"/>
       <meta name="twitter:image" content={seo.image}  id="image3"/>
       <meta name="twitter:creator" content={seo.twitterUsername} id="creator"/>
-      <link rel="alternate" hrefLang="nl-NL" href={seo.nlhrefurl}/>
-      <link rel="alternate" hrefLang="en-GB" href={seo.enhrefurl}/>
+      <link rel="alternate" hrefLang="nl-nl" href={seo.nlhrefurl}/>
+      <link rel="alternate" hrefLang="en-gb" href={seo.enhrefurl}/>
       <link rel="alternate" hrefLang="x-default" href={seo.nlhrefurl} />
       {children}
     </>
   )
 }
 
-     
