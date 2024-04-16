@@ -79,7 +79,7 @@ module.exports = {
     subtitlenl1: 'Hé, coach, op zoek naar financiële vrijheid? Ik leer je in 5 stappen hoe de passie van je social media spat.',
     subtitleen1: 'Hey coach, want financial freedom? I will teach you how to make your passion shine on social media in just 5 steps.',
     nlhrefurl: "https://iwankoenderman.com/",
-    enhrefurl: "https://iwankoenderman.com/en",
+    enhrefurl: "https://iwankoenderman.com/en/",
     keywords: [
     'online zichtbaar',
     'online zichtbaarheid',
