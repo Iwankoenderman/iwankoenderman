@@ -121,7 +121,7 @@ module.exports = {
     Facebookpersarialabel: "mijn Facebookpagina Iwan Koenderman",
     Instagrampers: "https://www.instagram.com/iwan_koenderman/",
     Instagrampersarialabel: "mijn instagram bedrijfsprofiel",
-    Linkedinpers: "https://www.linkedin.com/in/iwan-koenderman-623b7133/",
+    Linkedinpers: "https://www.linkedin.com/in/iwan-koenderman-623b7133",
     Linkedinpersarialabel: "mijn linkedin pagina iwan-koenderman",
     Tiktokpers: "https://www.tiktok.com/@iwankoenderman?lang=nl-NL",
     Tiktokpersarialabel: "mijn tiktok bedrijfsprofiel",
