@@ -53,7 +53,7 @@ return (
                 
             <Mylazyvideo
                     vidurl1 = "https://www.youtube-nocookie.com/embed/PKFfZ2NxepM"
-                    vidtitle1 = "Personal brand video van online boodschapscoach Iwan Koenderman met nadere toelichting waarom je booddschap vanuit je passie je drijveer belangrijk is voor je online zichtbaarheid en om te kunnen werken aan meer omzet en finaciele vrijheid."
+                    vidtitle1 = "Personal brand video van online boodschapscoach Iwan Koenderman met nadere toelichting waarom je boodschap vanuit je passie je drijveer belangrijk is voor je online zichtbaarheid en om te kunnen werken aan meer omzet en finaciele vrijheid."
                     vidln1= "nl"
                     vidurl2 = "https://www.youtube-nocookie.com/embed/YKlJFUPQCE4"
                     vidtitle2 = "Personal brand video by online message coach Iwan Koenderman, explaining the importance of conveying your message from passion as your driving force for online visibility and achieving increased sales and financial freedom." 
@@ -71,8 +71,8 @@ return (
                              paragraafnormaal1en = "Yes, your website is finally online. You're keeping a close eye on your mailbox. You're all set for those clients. You've already managed to get some orders through networking and phone calls, but you'd like to have more. You're hoping for long-term continuity. But it's eerily quiet. Your website is hardly being viewed and almost no one is reacting to your social media profiles. Only nice messages from friends and family. It's time to change your strategy."/>
 
                              <Paragraafnormaal
-                             paragraafnormaal1nl = "Ik help ambitieuze ondernemers, die willen coachen hun boodschap zo concreet en helder mogelijk te maken vanuit hun passie en het waarom ze het doen."
-                             paragraafnormaal1en = "I help ambitious entrepreneurs who want to coach to make their message as concrete and clear as possible from their passion and the why behind what they do." 
+                             paragraafnormaal1nl = "Ik help ambitieuze ondernemers, die willen coachen hun boodschap zo concreet en helder mogelijk te maken vanuit hun passie, het waarom ze het doen, en de waarde die ze hun klanten kunnen leveren."
+                             paragraafnormaal1en = "I help ambitious entrepreneurs who want to coach to make their message as concrete and clear as possible from their passion, the why behind what they do, and the value they can deliver to their clients." 
                              paragraafnormaal2nl = "Zodat ze deze bij het maken en plannen van berichten en teksten op hun social media en website kunnen zetten."
                              paragraafnormaal2en = "So that they can use it when creating and planning messages and texts on their social media and website."
                              paragraafnormaal3nl = "Waardoor ze zichtbaar worden voor hun ideale klant en daardoor kunnen werken aan een blijvende omzet op langere termijn."
@@ -592,7 +592,7 @@ return (
 }
 
 export function Head() { 
- 
+  
    return (
     
     <Seo>

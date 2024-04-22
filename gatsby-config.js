@@ -74,7 +74,9 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: `Bereik jij klanten op social media? | coach Iwan Koenderman`,
+    titleen: `Do you reach clients on social media?| Coach Iwan Koenderman`, 
     description: 'Ik help ambitieuze ondernemers, die coachen, in 5 eenvoudige stappen met het verwoorden van hun boodschap aan meer klanten op social media. Klik!',
+    descriptionen:'Discover how, as an entrepreneurial coach, you can formulate your message from your why in 5 simple steps to attract more clients on social media. Click',
     author: 'Coach Iwan Koenderman',
     subtitlenl1: 'Hé, coach, op zoek naar financiële vrijheid? Ik leer je in 5 stappen hoe de passie van je social media spat.',
     subtitleen1: 'Hey coach, want financial freedom? I will teach you how to make your passion shine on social media in just 5 steps.',
