@@ -67,7 +67,8 @@ export const Head = ({
                enhrefurl={enhrefurl}
                lang={lang}
                >
-              <Script embedUrl={true}type = "application/ld+json">{JSON.stringify(videoscheme)}</Script>                                                    
+              {(embedUrl ? true : null) && (  
+              <Script type = "application/ld+json">{JSON.stringify(videoscheme)}</Script> )}                                                   
 </Seo>   
   )
 };
