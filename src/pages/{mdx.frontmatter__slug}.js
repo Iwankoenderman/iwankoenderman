@@ -59,8 +59,8 @@ export const Head = ({
                                 },
                      },  
                      embedUrl}
-  const faqscheme ={"faqpage":  
-             {  "@type": "FAQPage",
+  const faqscheme ={"@context": "https://schema.org", 
+              "@type": "FAQPage",
               "mainEntity": [{
               "@type": "Question",
               "name": faqvraag1,
@@ -77,7 +77,7 @@ export const Head = ({
               "text": faqanswer2
           }
           }]
-          }
+          
   }                   
   return (
   
