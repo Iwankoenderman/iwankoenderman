@@ -37,7 +37,7 @@ useEffect(() => {
 export const Head = ({
   data: {
     mdx:{
-      frontmatter: { title, name, duration, thumbnailUrl, uploadDate, embedUrl, description, nlhrefurl, enhrefurl, lang }
+      frontmatter: { title, name, duration, thumbnailUrl, uploadDate, embedUrl, description, nlhrefurl, enhrefurl, lang, faqvraag1, faqanswer1, faqvraag2, faqanswer2 }
     }
   }
 }) => {
@@ -59,6 +59,26 @@ export const Head = ({
                                 },
                      },  
                      embedUrl}
+  const faqscheme ={"faqpage":  
+             {  "@type": "FAQPage",
+              "mainEntity": [{
+              "@type": "Question",
+              "name": faqvraag1,
+              "acceptedAnswer": {
+              "@type": "Answer",
+              "text": faqanswer1
+           }
+           },
+           {
+              "@type": "Question",
+              "name": faqvraag2,
+              "acceptedAnswer": {
+              "@type": "Answer",
+              "text": faqanswer2
+          }
+          }]
+          }
+  }                   
   return (
   
   <Seo         title={title}
@@ -68,7 +88,9 @@ export const Head = ({
                lang={lang}
                >
               {(embedUrl ? true : null) && (  
-              <Script type = "application/ld+json">{JSON.stringify(videoscheme)}</Script> )}                                                   
+              <Script type = "application/ld+json">{JSON.stringify(videoscheme)}</Script> )}   
+              {(faqvraag1 ? true : null) && (  
+              <Script type = "application/ld+json">{JSON.stringify(faqscheme)}</Script> )}                                                 
 </Seo>   
   )
 };
@@ -88,6 +110,10 @@ export const AnderepageQuery = graphql`
         embedUrl
         nlhrefurl 
         enhrefurl
+        faqvraag1
+        faqanswer1
+        faqvraag2
+        faqanswer2
       } 
     }
   }

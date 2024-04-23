@@ -610,24 +610,6 @@ export function Head() {
             "author": { "@type": "Person", "name": "Marlies Spijkerboer" },
             "reviewRating": { "@type": "Rating", "ratingValue": "5" }, 
             "reviewBody": "→ &quot;Het was een leerzaam traject met Iwan om mijn website te updaten. Iwan weet duidelijk waar hij het over heeft en is helder in zijn tips en ideeën. Geeft je ook de ruimte om het vooral te doen zoals jij het wil, maar wel met zijn idee in zijn achterhoofd.</I><I>Na 5 sessies heb ik een mooie, compacte website zonder te lange lappen tekst!!&quot;" },               
-"faqpage":   {  "@type": "FAQPage",
-              "mainEntity": [{
-              "@type": "Question",
-              "name": "Kun je klanten krijgen op social media?",
-              "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "<p>Jazeker. Dat kan als je vanuit je passie je boodschap verkoopt. Door content op social media te creëren, die authentiek, relevant en social is. In de vorm van posts, bijdragen, video´s reels, podcasts. Op zo´n manier dat klanten je gaan vertrouwen en je als de expert gaan zien. Wil je hier meer over weten?<a href=https://bewustsociaalopweb.hubspotpagebuilder.com/nederlands-tal> Download dan mijn e-book hierover</a></p>"
-           }
-           },
-           {
-              "@type": "Question",
-              "name": "Wat wordt met de why bedoeld?",
-              "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "De why komt van het model de Golden Circle van Simon Sinek. Dit model bestaat uit 3 concentrische circles met in het midden why, dan how, dan what. Simon Sinek beweert dat sterke merken en leiders altijd vanuit het midden, de why, naar buiten toe werken naar de wat. In tegenstelling tot degenen die dat niet zijn. Die gaan van buiten naar binnen en beginnen met de wat. Wil je weten wat dat voor jou kan betekenen?<a href=https://meetings.hubspot.com/iwan-koenderman> klik hier voor het maken van een zoomafspraak</a> </p>"
-          }
-          }]
-          }
          }
 )}</Script>                                                               
     </Seo>    
