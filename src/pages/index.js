@@ -537,7 +537,7 @@ return (
                        head2nl = "FAQ; de why, Simon Sinek, meer klanten"
                        head2en = "FAQ; the why, Simon Sinek, more clients"  />
 
-                         <Head3
+                      <Head3
                        head3nl = "1. Wat wordt met de why bedoeld?"
                        head3en = "1. What is meant by the why?" />
                     
