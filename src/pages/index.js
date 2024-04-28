@@ -604,12 +604,13 @@ export function Head() {
 "email": "info@iwankoenderman.com", 
 "address": { "@type": "PostalAddress", 
 "addressLocality": "Utrecht", 
-"addressCountry": "Nederland" }, 
+"addressCountry": "Nederland / The Netherlands" }, 
 "url": "https://iwankoenderman.com/", 
 "review": { "@type": "Review", 
             "author": { "@type": "Person", "name": "Marlies Spijkerboer" },
             "reviewRating": { "@type": "Rating", "ratingValue": "5" }, 
-            "reviewBody": "→ &quot;Het was een leerzaam traject met Iwan om mijn website te updaten. Iwan weet duidelijk waar hij het over heeft en is helder in zijn tips en ideeën. Geeft je ook de ruimte om het vooral te doen zoals jij het wil, maar wel met zijn idee in zijn achterhoofd.</I><I>Na 5 sessies heb ik een mooie, compacte website zonder te lange lappen tekst!!&quot;" },               
+            "reviewBody": "→ &quot;Het was een leerzaam traject met Iwan om mijn website te updaten. Iwan weet duidelijk waar hij het over heeft en is helder in zijn tips en ideeën. Geeft je ook de ruimte om het vooral te doen zoals jij het wil, maar wel met zijn idee in zijn achterhoofd.</I><I>Na 5 sessies heb ik een mooie, compacte website zonder te lange lappen tekst!!</I><I>English. It was an instructive journey with Iwan to update my website. Iwan clearly knows what he's talking about and is articulate in his advice and ideas. He also gives you the space to do it the way you want, but with his ideas in mind.<I></I>After 5 sessions, I have a nice, concise website without overly long blocks of text!&quot;"
+           },               
          }
 )}</Script>                                                               
     </Seo>    
