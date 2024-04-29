@@ -149,14 +149,14 @@ module.exports = {
       `gatsby-plugin-webpack-bundle-analyser-v2`,    
       {
         resolve: 'gatsby-plugin-exclude',
-        options:  { paths: ['/en/**', '!/en/', '!/en/thanksebook', '!/en/privacystatementandcookiepolicy/',  '!/en/videoreviewenglish/', '!/en/termandconditions/', '!/en/faq/', '!/en/introductionvideoiwankoenderman', '!/en/linktreefromcoachiwankoenderman', '!/en/cancelpayment','!/en/scedulefirstzoomsession','/nl/**',                                   
+        options:  { paths: ['/en/**', '!/en/', '!/en/thanksebook', '!/en/privacystatementandcookiepolicy/', '!/en/brandidentityvideoiwankoenderman/', '!/en/videoreviewenglish/', '!/en/termandconditions/', '!/en/faq/', '!/en/introductionvideoiwankoenderman', '!/en/linktreefromcoachiwankoenderman', '!/en/cancelpayment','!/en/scedulefirstzoomsession','/nl/**',                                   
       ] },
      
       },   
         {
       resolve: 'gatsby-plugin-sitemap',
       options: {
-        excludes: ['/privacystatementandcookiepolicy/', '/termandconditions/', '/thanksebook/', '/bedanktebook/', '/cancelpayment/', '/scedulefirstzoomsession/', '/faq?',]
+        excludes: ['/privacystatementandcookiepolicy/', '/termandconditions/', '/thanksebook/', '/bedanktebook/', '/cancelpayment/', '/introductionvideo/', '/videoreviewenglish/', '/scedulefirstzoomsession/', '/brandidentityvideoiwankoenderman/',  '/linktreefromcoachiwankoenderman/', '/faq/',]
       }
       },
     {
