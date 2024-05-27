@@ -362,8 +362,8 @@ return (
                               aria-label=  {`${ "Afbeelding geplaatst bij: Ik vind dat iedereen financiële vrijheid moet kunnen krijgen onafhankelijk van wie, wat of waar dan ook; Iwan Koenderman"}${" "}${sloganbedrijfalt}`}
                               placeholder="blurred"
                               layout="fixed"
-                              height ={213}
-                              width = {320}
+                              height ={580}
+                              width = {600}
                               loading = "lazy"
                                />  
                              ) : (   <StaticImage
