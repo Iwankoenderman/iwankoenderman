@@ -373,8 +373,8 @@ return (
                              aria-label=  {`${ "Image posted to: I believe everyone should be able to have financial freedom regardless of who, what or where; Iwan Koenderman"}${" "}${sloganbedrijfalt}`}
                              placeholder="blurred"
                              layout="fixed"
-                             height ={213}
-                             width = {320  }
+                             height ={580}
+                             width = {600}
                              loading = "lazy"
                             />   )}  <p>{" "}</p>
                          </div>
