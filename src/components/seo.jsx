@@ -25,7 +25,7 @@ export const Seo = ({ title, titleen, description, descriptionen, nlhrefurl, enh
        <>
         <html lang={seo.langen} />
         <title>{seo.titleen}</title>
-        <link rel="canonical" href={seo.enhrefurl}/>
+        <link rel="canonical" href={seo.enhrefurl} id="canonical"/>
         <meta name="robots" content="all"></meta>
         <meta name="description" content={seo.descriptionen} id="title" />
         <meta name="image" content={seo.image} id="image"/>
@@ -35,9 +35,9 @@ export const Seo = ({ title, titleen, description, descriptionen, nlhrefurl, enh
         <meta name="twitter:description" content={seo.descriptionen} id="description"/>
         <meta name="twitter:image" content={seo.image}  id="image3"/>
         <meta name="twitter:creator" content={seo.twitterUsername} id="creator"/>
-        <link rel="alternate" hrefLang="en-gb" href={seo.enhrefurl}/>
-        <link rel="alternate" hrefLang="nl-nl" href={seo.nlhrefurl}/>
-        <link rel="alternate" hrefLang="x-default" href={seo.enhrefurl} />
+        <link rel="alternate" hrefLang="en-gb" href={seo.enhrefurl} id="hreflangen"/>
+        <link rel="alternate" hrefLang="nl-nl" href={seo.nlhrefurl} id="hreflangnl"/>
+        <link rel="alternate" hrefLang="x-default" href={seo.enhrefurl} id="hreflangdefault"/>
        {children}
     </>)
       } 

@@ -22,8 +22,8 @@ export default function Layoutlanding ({ children }) {
 </div>
 </div> 
 <main><MDXProvider components={{
-          h1: props => <h1 {...props} style={{ color: "#7d7fa4"}} arialabelledby={{ text: "heading 1 voor style markdown in section zonder menu"}} />,
-          h2: props => <h2 {...props} style={{ color: "#7d7fa4"}} arialabelledby={{ text: "heading 2 voor style markdown in section zonder menu"}} />,
+          h1: props => <h1 {...props} style={{ color: "#7d7fa4"}} arialabelledby={{ text: "heading 1 voor style markdown in section zonder menu"}}/>,
+          h2: props => <h2 {...props} style={{ color: "#7d7fa4"}} arialabelledby={{ text: "heading 2 voor style markdown in section zonder menu"}}/>,
           h3: props => <h3 {...props} style={{ color: "#7d7fa4"}} arialabelledby={{ text: "heading 3 voor style markdown in section zonder menu"}}/>,
           Link,
           Ctabutton,
