@@ -23,6 +23,7 @@ export const useSiteMetadata = () => {
             whatsappref
             mailAdres
             logo
+            image
             addressLocality
             addressCountry
             Country          
