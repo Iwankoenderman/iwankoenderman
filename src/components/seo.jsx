@@ -16,7 +16,7 @@ export const Seo = ({ title, titleen, description, descriptionen, nlhrefurl, enh
     langen: langen,
     image: `${siteUrl}${image}`,
     url: `${siteUrl}${pathname || ``}`,
-    twitterUsername,
+    twitterUsername,  
   }
   const path = globalHistory.location.pathname
   const isEnglishpage = path === '/en/'
