@@ -112,7 +112,7 @@ module.exports = {
       langs: ['nl', 'en'],
       defaultLangKey: 'nl'
     },
-    image: "indexog.png",
+    image: "/indexog.png",
     phonenr: "++31(0)622196160",
     phonelink: "tel:+31622196160",
     whatsapplink: "https://wa.me/31622196160",
