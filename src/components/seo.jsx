@@ -14,7 +14,7 @@ export const Seo = ({ title, titleen, description, descriptionen, nlhrefurl, enh
     enhrefurl: enhrefurl || defaultenHrefurl,
     lang: lang,
     langen: langen,
-    image: `${siteUrl}${image}`,
+    image: `${siteUrl}${'/'}${image}`,
     url: `${siteUrl}${pathname || ``}`,
     twitterUsername,  
   }
