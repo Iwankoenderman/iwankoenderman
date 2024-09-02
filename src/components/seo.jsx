@@ -28,12 +28,12 @@ export const Seo = ({ title, titleen, description, descriptionen, nlhrefurl, enh
         <link rel="canonical" href={seo.enhrefurl} id="canonical"/>
         <meta name="robots" content="all"></meta>
         <meta name="description" content={seo.descriptionen} id="title" />
-        <meta property="og:image" content={seo.image} id="image"/>
+        <meta property="og:image:secure_url" content={seo.image} id="image"/>
         <meta name="twitter:card" content="summary_large_image" id="image2"/>
         <meta name="twitter:title" content={seo.titleen} id="title2"/>
         <meta property="twitter:url" content={seo.url} id="url"/>
         <meta name="twitter:description" content={seo.descriptionen} id="description"/>
-        <meta name="twitter:image" content={seo.image}  id="image3"/>
+        <meta name="twitter:image:secure_url" content={seo.image}  id="image3"/>
         <meta name="twitter:creator" content={seo.twitterUsername} id="creator"/>
         <link rel="alternate" hrefLang="en-gb" href={seo.enhrefurl} id="hreflangen"/>
         <link rel="alternate" hrefLang="nl-nl" href={seo.nlhrefurl} id="hreflangnl"/>
@@ -48,12 +48,12 @@ export const Seo = ({ title, titleen, description, descriptionen, nlhrefurl, enh
       <link rel="canonical" href={seo.nlhrefurl}/>
       <meta name="robots" content="all"></meta>
       <meta name="description" content={seo.description} id="title" />
-      <meta property="image" content={seo.image} id="image"/>
+      <meta property="og:image:secure_url" content={seo.image} id="image"/>
       <meta name="twitter:card" content="summary_large_image" id="image2"/>
       <meta name="twitter:title" content={seo.title} id="title2"/>
       <meta property="twitter:url" content={seo.url} id="url"/>
       <meta name="twitter:description" content={seo.description} id="description"/>
-      <meta name="twitter:image" content={seo.image}  id="image3"/>
+      <meta name="twitter:image:secure_url" content={seo.image}  id="image3"/>
       <meta name="twitter:creator" content={seo.twitterUsername} id="creator"/>
       <link rel="alternate" hrefLang="nl-nl" href={seo.nlhrefurl}/>
       <link rel="alternate" hrefLang="en-gb" href={seo.enhrefurl}/>
