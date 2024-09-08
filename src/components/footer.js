@@ -21,7 +21,6 @@ const intl = useIntl();
   return (
 <div className='footerblock'>
        <div className='footerblock__row'>
-       <CookieConsentBar/> 
                  <div className='footerblock__row__column'>
                         <div className='footerblock__row__column--footer'>
                                <div className='footerenkelblock'>
@@ -99,8 +98,15 @@ const intl = useIntl();
                         </div>
                      
                  </div> 
-           </div>      
-         
+           </div>  
+           <div className='mainblock_row'>
+<div className='footer-menu'>  
+<div className='footerenkelblock--footernormaalfontrightalignbold'>
+
+ <CookieConsentBar/> 
+ </div>
+</div>      
+</div>
 </div>
   )
 }
