@@ -91,9 +91,10 @@ const intl = useIntl();
                                     
                              
                                <Copyright/>
-                               <CookieConsentBar/>      
+                                     
                                    
-                               </div>       
+                               </div>    
+                               <CookieConsentBar/>   
                         </div>
                  </div>
            </div>
