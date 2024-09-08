@@ -12,7 +12,16 @@ export default function Layout  ({ children  }) {
         }} >{children}</MDXProvider>
  </main>
  <Footer/>
+ <div className ="footerblock">
+<div className='mainblock__hoofdrow'>
+<div className='footer-menu'>  
+<div className='footerenkelblock--footernormaalfontrightalignbold'>
+
  <CookieConsentBar/> 
+ </div>
+</div>  
+</div>
+</div>
 
  </div>
   )
