@@ -96,9 +96,10 @@ const intl = useIntl();
                                </div>    
                                  
                         </div>
-                        <CookieConsentBar/> 
+                     
                  </div> 
            </div>      
+           <CookieConsentBar/> 
 </div>
   )
 }
