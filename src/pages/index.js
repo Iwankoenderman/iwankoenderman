@@ -30,8 +30,6 @@ const Checkoutprod4 = loadable(() => import('../components/checkoutprod4'));
 const Checkoutprod5 = loadable(() => import('../components/checkoutprod5'));
 const Checkoutprod6 = loadable(() => import('../components/checkoutprod6'));
 
-
-
 export default function IndexPage ({ location,}) {   
     const { sloganbedrijfalt, 
     } = useSiteMetadata()  
@@ -185,6 +183,31 @@ return (
                          />    
                      )}  <p>{" "}</p>
                 </div>
+
+
+                <Head2
+                 head2nl = "Ik kan jou ontzorgen met social media"
+                 head2en = "I can take the burden off your shoulders with social media?" />
+
+                <Paragraafnormaal
+                paragraafnormaal1nl = "Zullen we eens kort afspreken om te zien hoe snel er een mooie post de lucht ingaat? Ik weet zéker dat dit nieuwe mogelijkheden voor jouw onderneming brengt! "
+                paragraafnormaal1en = "Shall we have a quick meeting to see how fast we can get a great post out there? I'm sure this will bring new opportunities for your business!" />
+
+                <div className='mainblock__pakket__column2'> 
+                                                   <div className='mainblock__hoofdrow--calltoaction'>
+                                                   <Ctabutton
+                                           Urlnl="https://meetings.hubspot.com/iwan-koenderman"
+                                           Urlen="https://meetings.hubspot.com/iwan-koenderman"
+                                           Arlabnl="Plan zoomgesprek"
+                                           Arlaben="Schedule zoom call"
+                                           ButTxtnl="Plan zoomgesprek"
+                                           ButTxten="Schedule zoom call"/>  
+                                                    </div>
+                                                    </div>
+
+                <Head2
+                 head2nl = "Of je helpen met jouw social media"
+                 head2en = "Why I can help you?" />
 
                 <Paragraafnormaal
                 paragraafnormaal1nl = "Maak een afspraak en start:"
