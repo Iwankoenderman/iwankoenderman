@@ -5,7 +5,6 @@ import Copyright from './copyright'
 import Footermenu from './footermenu'
 import {useIntl} from 'gatsby-plugin-intl';
 import { useSiteMetadata } from "../hooks/use-site-metadata"
-import CookieConsentBar from "./cookieconsentbar";
 export default function Footer() {
   const {
   Plaats,
@@ -93,20 +92,10 @@ const intl = useIntl();
                                <Copyright/>
                                      
                                    
-                               </div>    
-                                 
+                               </div>       
                         </div>
-                     
-                 </div> 
-           </div>  
-           <div className='mainblock_row'>
-<div className='footer-menu'>  
-<div className='footerenkelblock--footernormaalfontrightalignbold'>
-
- <CookieConsentBar/> 
- </div>
-</div>      
-</div>
+                 </div>
+           </div>
 </div>
   )
 }
