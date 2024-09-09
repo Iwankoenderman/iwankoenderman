@@ -7,9 +7,10 @@ import CookieConsentBar from "./cookieconsentbar";
 export default function Layout  ({ children  }) {
   return (   
   <div className="flexThisBox">
- <TopMenu/>     
+ <TopMenu/>   
+ <CookieConsentBar/>  
  <main><MDXProvider components={{
-        }} >{children}<CookieConsentBar/></MDXProvider>
+        }} >{children}</MDXProvider>
  </main>
  <Footer/>
  </div>
