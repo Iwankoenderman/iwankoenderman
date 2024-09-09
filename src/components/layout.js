@@ -10,9 +10,10 @@ export default function Layout  ({ children  }) {
  <TopMenu/>    
  <main><MDXProvider components={{
         }} >{children}</MDXProvider>
+  <CookieConsentBar/>        
  </main>
  <Footer/>
- <CookieConsentBar/> 
+
  </div>
   )
 }
