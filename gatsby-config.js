@@ -75,8 +75,8 @@ module.exports = {
   siteMetadata: {
     title: `Bereik jij klanten op social media? | coach Iwan Koenderman`,
     titleen: `Do you reach clients on social media?| Coach Iwan Koenderman`, 
-    description: 'Creatieve ondernemer/ coach? Leer hoe je je boodschap effectief verwoordt en klanten aantrekt via socials in 5 stappen. Bereik financiële vrijheid. Klik nu!',
-    descriptionen:'Creative entrepreneur or coach? Discover 5 steps to craft your message and attract clients via social media. Achieve financial freedom. Click now!',
+    description: 'Ben jij ondernemer, die creatief is of mensen helpt? Leer hoe je je niche effectief verwoordt in een boodschap en klanten aantrekt via socials. Klik nu!',
+    descriptionen:'Are you a creative entrepreneur or someone who helps others? Learn how to effectively communicate your niche and attract clients via socials. Click now!',
     author: 'Social media | Iwan Koenderman',
     subtitlenl1: 'Hé ondernemer, zoek je omzet? Ik leer hoe je je niche verwoord en als expert passie van je social media post spat',
     subtitleen1: 'Entrepreneur, want clients? I’ll help you define your niche and make your expertise shine through social posts',
