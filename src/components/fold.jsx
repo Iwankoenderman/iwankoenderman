@@ -10,10 +10,10 @@ export default function Fold() {
 <>
                        <div className='mainblock__hoofdrow'>
                             <div className='mainblock__hoofdrow--fold'>
-                                 {intl.locale === "nl" ? (<p>Plan een afspraak, start met:</p>) : (<p>Make an appointment, start with: </p>)}
+                                 {intl.locale === "nl" ? (<p>Plan afspraak, start met:</p>) : (<p>Make appointment, start with: </p>)}
                                  {intl.locale === "nl" ? (<p>● je verwoorde niche</p>) : (<p>● a clear message;</p>)} 
                                  {intl.locale === "nl" ? (<p>● je social media posts </p>) : (<p>● your social posts</p>)}
-                                 {intl.locale === "nl" ? (<p>● claim je expert status</p>) : (<p>● claim your expert status;</p>)}                                
+                                 {intl.locale === "nl" ? (<p>● je expert status claim</p>) : (<p>● your expert status claim;</p>)}                                
                            </div>
                        </div>   
                              <Ctabutton
