@@ -69,12 +69,12 @@ return (
                              paragraafnormaal1en = "Yes, your website is finally online. You're keeping a close eye on your mailbox. You're all set for those clients. You've already managed to get some orders through networking and phone calls, but you'd like to have more. You're hoping for long-term continuity. But it's eerily quiet. Your website is hardly being viewed and almost no one is reacting to your social media profiles. Only nice messages from friends and family. It's time to change your strategy."/>
 
                              <Paragraafnormaal
-                             paragraafnormaal1nl = "Ik help ambitieuze ondernemers, die willen coachen hun boodschap zo concreet en helder mogelijk te maken vanuit hun passie, het waarom ze het doen, en de waarde die ze hun klanten kunnen leveren."
-                             paragraafnormaal1en = "I help ambitious entrepreneurs who want to coach to make their message as concrete and clear as possible from their passion, the why behind what they do, and the value they can deliver to their clients." 
-                             paragraafnormaal2nl = "Zodat ze deze bij het maken en plannen van berichten en teksten op hun social media en website kunnen zetten."
-                             paragraafnormaal2en = "So that they can use it when creating and planning messages and texts on their social media and website."
+                             paragraafnormaal1nl = "Ik help creatieve ondernemers en ondernemers, die met mensen werken, om hun boodschap zo concreet en helder mogelijk te maken, vanuit hun passie, het waarom achter wat ze doen, en de waarde die ze aan hun klanten kunnen leveren."
+                             paragraafnormaal1en = "I help creative entrepreneurs and entrepreneurs who work with people to make their message as concrete and clear as possible, based on their passion, the 'why' behind what they do, and the value they can deliver to their clients" 
+                             paragraafnormaal2nl = "Zodat ze deze bij het maken en plannen van berichten en teksten op hun social media en website kunnen zetten. Ik kan helpen met het schrijven van de posts, of ik kan hen, als ze al een helder idee hebben, volledig ontzorgen door het voor ze te doen."
+                             paragraafnormaal2en = "So that they can use it when creating and planning messages and texts on their social media and website. I can assist with writing the posts, or I can fully take over the task if they already have a clear idea."
                              paragraafnormaal3nl = "Waardoor ze zichtbaar worden voor hun ideale klant en daardoor kunnen werken aan een blijvende omzet op langere termijn."
-                             paragraafnormaal3en = "This allows them to become visible to their ideal customer and, as a result, work towards sustainable long-term revenue."
+                             paragraafnormaal3en = "This allows them to become visible to their ideal client and, as a result, work towards sustainable long-term revenue."
                              paragraafnormaal4nl = "Herken je jezelf hierin?"
                              paragraafnormaal4en = "Do you recognize yourself in this?"/>
                     <Emptyrow/>                             
@@ -107,8 +107,8 @@ return (
                 paragraafnormaal4en = "Hence my 5 step plan you can start right away. To make sure that your clients can always find you (online)."
                 paragraafnormaal5nl = "Iedereen is nu online en je wilt aanwezig zijn waar je klanten zijn. Online marketing biedt bovendien een fijne backup voor als het offline niet lukt. Online marketing is bovendien iets waarbij je de meeste controle in eigen hand hebt. Jij bent degene die zelf aan de slag gaat met de content creatie en content plannen. Zorg er daarom voor dat je altijd online goed zichtbaar bent met een duidelijke boodschap en 'why', zodat je ideale klant je kan vinden. Dit idee van de why komt van Simon Sinek, auteur van het boek 'Start With Why' en inspirerende spreker. Volgens hem handelen sterke merken en leiders altijd vanuit hun why."
                 paragraafnormaal5en = "Everyone is now online and you want to be present where your clients are. Online marketing also offers a nice backup in case offline doesn't work out. Additionally, online marketing is something where you have the most control in your own hands. You are the one who takes charge of content creation and planning. Therefore, make sure you are always visible online with a clear message and 'why', so that your ideal client can find you. This idea of the 'why' comes from Simon Sinek, author of the book 'Start With Why' and an inspiring speaker. According to him, strong brands and leaders always act from their 'why'"
-                paragraafnormaal6nl = "Met mijn 5 stappenplan kun je meteen beginnen."
-                paragraafnormaal6en = "With my 5 step plan you can start right away."/>
+                paragraafnormaal6nl = "Is jouw boodschap al helder voor je? Maak dan een afspraak met me zodat ik je kan ontzorgen met het schrijven van de posts. Is dit niet het geval? Geen probleem. Met mijn 5-stappenplan kun je meteen aan de slag."
+                paragraafnormaal6en = "If your message is already clear, make an appointment with me so I can take care of writing the posts for you. If it's not clear yet, no problem. You can start right away with my 5-step plan."/>
 
                   <div className='mainblock__hoofdrow'>
                             <div className='mainblock__hoofdrow--calltoaction'>

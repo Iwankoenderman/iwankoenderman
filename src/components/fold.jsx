@@ -10,9 +10,9 @@ export default function Fold() {
 <>
                        <div className='mainblock__hoofdrow'>
                             <div className='mainblock__hoofdrow--fold'>
-                                 {intl.locale === "nl" ? (<p>Maak een afspraak en start met:</p>) : (<p>Make an appointment and start: </p>)}
-                                 {intl.locale === "nl" ? (<p>● duidelijk verwoorde boodschap</p>) : (<p>● with a clear message;</p>)} 
-                                 {intl.locale === "nl" ? (<p>● voor jouw social media strategie </p>) : (<p>● for your social media strategy</p>)}
+                                 {intl.locale === "nl" ? (<p>Maak een afspraak en start:</p>) : (<p>Make an appointment and start: </p>)}
+                                 {intl.locale === "nl" ? (<p>● helder verwoorde boodschap</p>) : (<p>● a clear message;</p>)} 
+                                 {intl.locale === "nl" ? (<p>● jouw social media strategie </p>) : (<p>● your social media strategy</p>)}
                                  {intl.locale === "nl" ? (<p>● claim je expert status</p>) : (<p>● claim your expert status;</p>)}                                
                            </div>
                        </div>   
