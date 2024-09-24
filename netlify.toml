@@ -4,3 +4,7 @@
   status = 200
   force = true
 
+  from = "/__third-party-proxy?url=https://www.google-analytics.com/analytics.js"
+  to = "https://www.google-analytics.com/analytics.js:splat"
+  status = 200
+  force = true

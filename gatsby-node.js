@@ -10,6 +10,12 @@ exports.onPreBuild = async ({ actions: { createRedirect } })=> {
     toPath: `https://www.googletagmanager.com/gtag/js?id=${gtmTrackingId}`,
     statusCode: 200,
   })
+
+  createRedirect({
+    fromPath:  `/__third-party-proxy?url=https://www.google-analytics.com/analytics.js`,
+    toPath: `https://www.google-analytics.com/analytics.js`,
+    statusCode: 200,
+  })
 }
 
 
