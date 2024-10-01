@@ -31,21 +31,15 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
        <script
     key="partytown-vanilla-config"
     dangerouslySetInnerHTML={{
-      __html: `partytown = {
-        resolveUrl(url, location) {
-          if (url.hostname.includes('google-analytics')) {
-             // Use a secure connection
-             if (url?.protocol === 'http:') {
-               url = new URL(url.href.replace('http', 'https'))
-             }
-             // Point to our proxied URL
-             const proxyUrl = new URL(location.origin + '/__third-party-proxy')
-             proxyUrl.searchParams.append('url', url)
-             return proxyUrl
-           }
-           return url
-        }
-      }`,
+      __html: `(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src='/gtag/js?id='${gtmTrackingId}';
+            m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.googletagmanager.com/gtag/js?id='${gtmTrackingId}','gtag');
+  
+            gtag('js', new Date());
+            gtag('config', '${gtmTrackingId}');
+          `,
     }}
   />,     
    ]),
