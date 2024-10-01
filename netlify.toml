@@ -1,11 +1,24 @@
-[[redirects]]
-  from = "/__third-party-proxy?url=https://www.googletagmanager.com/gtag/js?id=GTM-KKM6ZM7"
-  to = "https://www.googletagmanager.com/gtag/js?id=GTM-KKM6ZM7:splat"
+
+  [[redirects]]
+  from = "/gtag/js"
+  to = "https://www.googletagmanager.com/gtag/js"
   status = 200
   force = true
 
 [[redirects]]
-  from = "/__third-party-proxy?url=https://www.google-analytics.com/analytics.js"
-  to = "https://www.google-analytics.com/analytics.js:splat"
+  from = "/gtm.js"
+  to = "https://www.googletagmanager.com/gtm.js"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/analytics.js"
+  to = "https://www.google-analytics.com/analytics.js"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/collect"
+  to = "https://www.google-analytics.com/collect"
   status = 200
   force = true
