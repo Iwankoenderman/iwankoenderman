@@ -18,7 +18,7 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
       __html:`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      '/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      '${ORIGIN}/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','${gtmTrackingId}');`,
     }}
     />,
@@ -35,7 +35,7 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src='/gtag/js?id='${gtmTrackingId}';
             m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.googletagmanager.com/gtag/js?id='${gtmTrackingId}','gtag');
+            })(window,document,'script','${ORIGIN}/gtag/js?id='${gtmTrackingId}','gtag');
   
             gtag('js', new Date());
             gtag('config', '${gtmTrackingId}');
