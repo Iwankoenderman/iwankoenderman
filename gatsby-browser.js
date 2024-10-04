@@ -1,30 +1,30 @@
 import "@fontsource/clear-sans"
+import React from 'react';
+import { init, Partytown } from '@builder.io/partytown/react';
 
-export const onRouteUpdate = ({ location }) => {
-    if (process.env.NODE_ENV !== 'production') {
-      return null;
-    }
-  
-    const pagePath = location ? location.pathname + location.search + location.hash : undefined;
-  
-    setTimeout(() => {
-      if (typeof window.gtag === 'function') {
-        window.gtag('event', 'page_view', { page_path: pagePath });
-      }
-    }, 100);
-  };
+const ORIGIN = "https://www.googletagmanager.com";
+const gtmTrackingId = process.env.GATSBY_GTM_MEASUREMENT_ID
 
-  // gatsby-browser.js
+init(); // Initialiseer Partytown
+
 export const onInitialClientRender = () => {
-  console.log('Initial render is complete, waiting for Partytown to initialize.');
+  console.log('Initial render is complete.');
 
-  setTimeout(() => {
-    console.log('Partytown should be ready now, executing GTM script.');
-    
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({
-      'gtm.start': new Date().getTime(),
-      event: 'gtm.js',
-    });
-  }, 100); // Wacht 100 ms om Partytown tijd te geven om te initialiseren
+  // Data Layer initialiseren voor GTM
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    'gtm.start': new Date().getTime(),
+    event: 'gtm.js'
+  });
+
+  // Voeg GTM-script toe
+  const gtmScript = document.createElement('script');
+  gtmScript.src = `${ORIGIN}/gtm.js?id=${gtmTrackingId}`; // Vervang met je GTM-ID
+  gtmScript.async = true;
+  document.head.appendChild(gtmScript);
+};
+
+// Wrap de root element voor Partytown
+export const wrapRootElement = ({ element }) => {
+  return <Partytown>{element}</Partytown>;
 };
