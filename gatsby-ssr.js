@@ -23,14 +23,10 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
       })(window,document,'script','dataLayer','${gtmTrackingId}');`,
     }}
     />,
-    <Script id="gtm-init" strategy="off-main-thread">
-  {`
-    window.dataLayer = window.dataLayer || []
-    window.dataLayer.push({ 'gtm.start': new Date().getTime(), 'event': 'gtm.js' })
-  `}
-</Script>,
+
        <script
     key="partytown-vanilla-config"
+    type="text/partytown"
     dangerouslySetInnerHTML={{
       __html: `(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
