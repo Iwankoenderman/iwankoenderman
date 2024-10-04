@@ -13,3 +13,18 @@ export const onRouteUpdate = ({ location }) => {
       }
     }, 100);
   };
+
+  // gatsby-browser.js
+export const onInitialClientRender = () => {
+  console.log('Initial render is complete, waiting for Partytown to initialize.');
+
+  setTimeout(() => {
+    console.log('Partytown should be ready now, executing GTM script.');
+    
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      'gtm.start': new Date().getTime(),
+      event: 'gtm.js',
+    });
+  }, 100); // Wacht 100 ms om Partytown tijd te geven om te initialiseren
+};
