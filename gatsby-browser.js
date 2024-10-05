@@ -8,6 +8,20 @@ const hotJarId = process.env.GATSBY_HOTJAR_ID; // Voeg deze regel toe om de Hotj
 
 init(); // Initialiseer Partytown
 
+export const onRouteUpdate = ({ location }) => {
+  if (process.env.NODE_ENV !== 'production') {
+    return null;
+  }
+
+  const pagePath = location ? location.pathname + location.search + location.hash : undefined;
+
+  setTimeout(() => {
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'page_view', { page_path: pagePath });
+    }
+  }, 100);
+};
+
 export const onInitialClientRender = () => {
   console.log('Initial render is complete.');
 
