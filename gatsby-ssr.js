@@ -12,7 +12,7 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
    setHtmlAttributes({ lang: [`nl`], })
    setHeadComponents([
     <Partytown key="partytown" debug={true} forward={['dataLayer.push']} />,
-    <Script
+    <script
     key="analytics" 
     type="text/partytown"
     strategy="off-main-thread"
@@ -28,6 +28,7 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
        <script
     key="partytown-vanilla-config"
     type="text/partytown"
+    strategy="off-main-thread"
     dangerouslySetInnerHTML={{
       __html: `(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -41,9 +42,10 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
   
   <script
   key="party-hotjar-config"
+  strategy="off-main-thread"
   type="text/partytown"
     dangerouslySetInnerHTML={{
-      __html:`   (function(h,o,t,j,a,r){
+      __html:`(function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
         h._hjSettings={hjid:${hotJarId},hjsv:6};
         a=o.getElementsByTagName('head')[0];
