@@ -5,6 +5,7 @@ import { Script } from "gatsby"
 const ORIGIN = "https://www.googletagmanager.com";
 const gtmTrackingId = process.env.GATSBY_GTM_MEASUREMENT_ID
 const gaTrackingId = process.env.GATSBY_GA_MEASUREMENT_ID
+const hotJarId = process.env.GATSBY_HOTJAR_ID; 
 
 export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyComponents}) => {
   
@@ -44,7 +45,7 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
     dangerouslySetInnerHTML={{
       __html:`   (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:3383201,hjsv:6};
+        h._hjSettings={hjid:${hotJarId},hjsv:6};
         a=o.getElementsByTagName('head')[0];
         r=o.createElement('script');r.async=1;
         r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
