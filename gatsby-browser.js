@@ -25,15 +25,27 @@ export const onInitialClientRender = () => {
     event: 'gtm.js'
   });
 
-  // Voeg GTM-script toe via Partytown
+  // Voeg Google Tag Manager (GTM) script toe via Partytown
   const gtmScript = document.createElement('script');
   gtmScript.type = "text/partytown"; // Laat Partytown het script laden
   gtmScript.src = `${ORIGIN}/gtm.js?id=${gtmTrackingId}`;
+  gtmScript.async = true;
   document.head.appendChild(gtmScript);
+
+  // Voeg optioneel Google Analytics toe via Partytown
+  const gaScript = document.createElement('script');
+  gaScript.type = "text/partytown"; // Partytown-laadtype
+  gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${gtmTrackingId}`; // Vervang met je Tracking ID voor GA
+  gaScript.async = true;
+  document.head.appendChild(gaScript);
+
+  // Initialiseer Google Analytics (als je Google Analytics gebruikt via GTM)
+  window.dataLayer.push({
+    'event': 'gtag.js',
+    'gtm.start': new Date().getTime(),
+  });
 };
 
-// onClientEntry is niet meer nodig voor Partytown.init()
-export const onClientEntry = () => {
-  console.log('Client entry complete.');
-};
+// onClientEntry kan worden verwijderd, want Partytown wordt al correct geïnitieerd via wrapRootElement
+
 
