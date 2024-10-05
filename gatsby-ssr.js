@@ -1,5 +1,6 @@
 import React from "react"
 import { Partytown } from '@builder.io/partytown/react';
+import { Script } from "gatsby"
 
 const ORIGIN = "https://www.googletagmanager.com";
 const gtmTrackingId = process.env.GATSBY_GTM_MEASUREMENT_ID
@@ -10,7 +11,7 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
    setHtmlAttributes({ lang: [`nl`], })
    setHeadComponents([
     <Partytown key="partytown" debug={true} forward={['dataLayer.push']} />,
-    <script
+    <Script
     key="analytics" 
     type="text/partytown"
     strategy="off-main-thread"
