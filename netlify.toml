@@ -54,8 +54,4 @@
     Cache-Control = "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
     Access-Control-Allow-Origin = "*"
 
-[[headers]]
-  for = "/static/*"
-  [headers.values]
-    Cache-Control = "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
-    Access-Control-Allow-Origin = "*"
+
