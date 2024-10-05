@@ -23,6 +23,13 @@
   status = 200
   force = true
 
+[[redirects]]
+  from = "/static/*"
+  to = "https://static.hotjar.com/:splat"
+  status = 200
+  force = true
+
+
 [[headers]]
   for = "/analytics.js"
   [headers.values]
@@ -47,3 +54,8 @@
     Cache-Control = "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
     Access-Control-Allow-Origin = "*"
 
+[[headers]]
+  for = "/static/*"
+  [headers.values]
+    Cache-Control = "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+    Access-Control-Allow-Origin = "*"
