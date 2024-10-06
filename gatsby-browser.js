@@ -1,6 +1,6 @@
 import React from "react"
 import { Partytown } from '@builder.io/partytown/react';
-import { Script } from "gatsby"
+
 
 const ORIGIN = "https://www.googletagmanager.com";
 const gtmTrackingId = process.env.GATSBY_GTM_MEASUREMENT_ID
@@ -12,7 +12,7 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
    setHtmlAttributes({ lang: [`nl`], })
    setHeadComponents([
     <Partytown key="partytown" debug={true} forward={['dataLayer.push']} />,
-    <Script
+    <script
     key="analytics" 
     type="text/partytown"
     strategy="off-main-thread"
@@ -53,29 +53,6 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`
     }}
     />,   
-    <script 
-    key="linkedin" 
-    strategy="off-main-thread"
-    type="text/javascript"
-    dangerouslySetInnerHTML={{
-      __html:` 
-    _linkedin_partner_id =${linkedinTrackingId}; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
-     window._linkedin_data_partner_ids.push(_linkedin_partner_id); 
-    ;`
-    }}
-    />,
-    <script 
-    key="linkedin-insight" 
-    strategy="off-main-thread"
-    type="text/javascript"
-    dangerouslySetInnerHTML={{
-      __html:` (function(l) { if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
-         window.lintrk.q=[]} var s = document.getElementsByTagName("script")[0];
-        var b = document.createElement("script"); b.type = "text/javascript";b.async = true; 
-        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})
-        (window.lintrk);`
-    }}
-    />,
 
    ]),
    setPreBodyComponents([
@@ -86,18 +63,6 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
                   <iframe src="${ORIGIN}/ns.html?id=${gtmTrackingId}" height="0" width="0"
                       style="display:none;visibility:hidden"></iframe>
                 `,
-      }}
-    />,
-    <noscript key="linkedin-noscript"
-    dangerouslySetInnerHTML={{
-        __html: `
-    <img
-      height="1"
-      width="1"
-      style={{ display: 'none' }}
-      alt=""
-      src="https://px.ads.linkedin.com/collect/?pid=${linkedinTrackingId}&fmt=gif">
-       `,
       }}
     />,
   ]);
