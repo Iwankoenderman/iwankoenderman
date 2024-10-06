@@ -70,7 +70,6 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
  // Het laden van het Insight Tag-script direct van LinkedIn, zonder proxy
  <script 
    key="linkedin-insight"
-   type="text/partytown"
    dangerouslySetInnerHTML={{
      __html: `
        (function(l) { 
