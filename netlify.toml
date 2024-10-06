@@ -30,7 +30,7 @@
   force = true
 
 [[redirects]]
-  from = "/linkedin-insight.min.js"
+  from = "/linkedin-insight"
   to = "https://snap.licdn.com/li.lms-analytics/insight.min.js:splat"
   status = 200
   force = true
