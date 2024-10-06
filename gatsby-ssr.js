@@ -66,7 +66,7 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
           var b = document.createElement("script");
           b.type = "text/javascript";
           b.async = true;
-          b.src = "/linkedin-insight.min.js"; // Gebruik de proxy-URL
+          b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; // Gebruik de proxy-URL
           s.parentNode.insertBefore(b, s);
         })();
       `}
