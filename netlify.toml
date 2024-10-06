@@ -29,3 +29,8 @@
   status = 200
   force = true
 
+[[redirects]]
+  from = "/linkedin-insight.min.js"
+  to = "https://snap.licdn.com/li.lms-analytics/insight.min.js:splat"
+  status = 200
+  force = true

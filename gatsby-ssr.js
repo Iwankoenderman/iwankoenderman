@@ -5,6 +5,7 @@ const ORIGIN = "https://www.googletagmanager.com";
 const gtmTrackingId = process.env.GATSBY_GTM_MEASUREMENT_ID
 const gaTrackingId = process.env.GATSBY_GA_MEASUREMENT_ID
 const hotJarId = process.env.GATSBY_HOTJAR_ID; 
+const linkedinTrackingId = process.env.GATSBY_LINKEDIN_PARTNER_ID;
 
 export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyComponents}) => {
   
@@ -55,6 +56,22 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
     }}
     />,   
 
+    <script key="linkedin-insight" type="text/javascript">
+      {`
+        _linkedin_partner_id = ${linkedinTrackingId};
+        window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+        window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+        (function() {
+          var s = document.getElementsByTagName("script")[0];
+          var b = document.createElement("script");
+          b.type = "text/javascript";
+          b.async = true;
+          b.src = "/linkedin-insight"; // Gebruik de proxy-URL
+          s.parentNode.insertBefore(b, s);
+        })();
+      `}
+    </script>,
+  
    ]),
    setPreBodyComponents([
     <noscript
@@ -66,6 +83,16 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
                 `,
       }}
     />,
+
+    <noscript key="linkedin-noscript">
+    <img
+      height="1"
+      width="1"
+      style={{ display: 'none' }}
+      alt=""
+      src={`https://px.ads.linkedin.com/collect/?pid=${linkedinTrackingId}&fmt=gif`}
+    />
+  </noscript>,
   ]);
 }
 
