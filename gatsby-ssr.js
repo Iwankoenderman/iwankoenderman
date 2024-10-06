@@ -55,38 +55,39 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`
     }}
     />,   
-    <script 
-    key="linkedin"
-    type="text/partytown"
-    dangerouslySetInnerHTML={{
-      __html: `
-        _linkedin_partner_id = ${linkedinTrackingId}; 
-        window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
-        window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-      `
-    }}
-  />,
-  <script 
-    key="linkedin-insight"
-    type="text/partytown"
-    dangerouslySetInnerHTML={{
-      __html: `
-        (function(l) { 
-          if (!l) {
-            window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
-            window.lintrk.q = [];
-          } 
-          var s = document.getElementsByTagName("script")[0];
-          var b = document.createElement("script"); 
-          b.type = "text/javascript"; 
-          b.async = true;
-          // Vervang deze URL met je reverse proxy URL
-          b.src = "/linkedin-insight";  
-          s.parentNode.insertBefore(b, s);
-        })(window.lintrk);
-      `
-    }}
-  />,
+   // Dit script zorgt voor het LinkedIn tracking ID en initialisatie
+   <script 
+   key="linkedin"
+   type="text/partytown"
+   dangerouslySetInnerHTML={{
+     __html: `
+       _linkedin_partner_id = ${linkedinTrackingId}; 
+       window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+       window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+     `
+   }}
+ />,    
+ // Het laden van het Insight Tag-script direct van LinkedIn, zonder proxy
+ <script 
+   key="linkedin-insight"
+   type="text/partytown"
+   dangerouslySetInnerHTML={{
+     __html: `
+       (function(l) { 
+         if (!l) {
+           window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+           window.lintrk.q = [];
+         } 
+         var s = document.getElementsByTagName("script")[0];
+         var b = document.createElement("script"); 
+         b.type = "text/javascript"; 
+         b.async = true;
+         b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";  // Laad direct van LinkedIn
+         s.parentNode.insertBefore(b, s);
+       })(window.lintrk);
+     `
+   }}
+ />,
    ]),
    setPreBodyComponents([
     <noscript
@@ -99,18 +100,18 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
       }}
     />,
     <noscript key="linkedin-noscript"
-    dangerouslySetInnerHTML={{
-      __html: `
-        <img
-          height="1"
-          width="1"
-          style="display:none"
-          alt=""
-          src="https://px.ads.linkedin.com/collect/?pid=${linkedinTrackingId}&fmt=gif"
-        />
-      `,
-    }}
-  />,
+      dangerouslySetInnerHTML={{
+        __html: `
+          <img
+            height="1"
+            width="1"
+            style="display:none"
+            alt=""
+            src="https://px.ads.linkedin.com/collect/?pid=${linkedinTrackingId}&fmt=gif"
+          />
+        `,
+      }}
+    />,
   ,
   ]);
 }
