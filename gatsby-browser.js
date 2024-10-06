@@ -54,6 +54,17 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
     }}
     />,   
     <script 
+    key="linkedin" 
+    strategy="off-main-thread"
+    type="text/javascript"
+    dangerouslySetInnerHTML={{
+      __html:` 
+    _linkedin_partner_id =${linkedinTrackingId}; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+     window._linkedin_data_partner_ids.push(_linkedin_partner_id); 
+    ;`
+    }}
+    />,
+    <script 
     key="linkedin-insight" 
     strategy="off-main-thread"
     type="text/javascript"
