@@ -56,20 +56,10 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
     }}
     />,   
 
-    <script key="linkedin-insight" type="text/javascript">
-      {`
-        _linkedin_partner_id = ${linkedinTrackingId};
-        window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
-        window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-        (function() {
-          var s = document.getElementsByTagName("script")[0];
-          var b = document.createElement("script");
-          b.type = "text/javascript";
-          b.async = true;
-          b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; // Gebruik de proxy-URL
-          s.parentNode.insertBefore(b, s);
-        })();
-      `}
+    <script 
+    key="linkedin-insight" 
+    type="text/javascript"
+     src="/linkedin-insight" async>
     </script>,
   
    ]),
