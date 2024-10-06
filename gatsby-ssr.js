@@ -55,11 +55,12 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`
     }}
-    />,   
+    />,  
+]),
+setHeadComponents([
    // Dit script zorgt voor het LinkedIn tracking ID en initialisatie
    <Script 
    key="linkedin"
-    type="text/partytown"
    dangerouslySetInnerHTML={{
      __html: `
        _linkedin_partner_id = ${linkedinTrackingId}; 
@@ -68,8 +69,6 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
      `
    }}
  />, 
-]),
-setHeadComponents([
  // Het laden van het Insight Tag-script direct van LinkedIn, zonder proxy
  <Script
    key="linkedin-insight"
