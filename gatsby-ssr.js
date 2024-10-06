@@ -11,6 +11,41 @@ const linkedinTrackingId = process.env.GATSBY_LINKEDIN_PARTNER_ID;
 export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyComponents}) => {
   
    setHtmlAttributes({ lang: [`nl`], })
+   
+setHeadComponents([
+   // Dit script zorgt voor het LinkedIn tracking ID en initialisatie
+   <Script 
+   key="linkedin"
+   dangerouslySetInnerHTML={{
+     __html: `
+       _linkedin_partner_id = ${linkedinTrackingId}; 
+       window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+       window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+     `
+   }}
+ />, 
+ // Het laden van het Insight Tag-script direct van LinkedIn, zonder proxy
+ <Script
+   key="linkedin-insight"
+   dangerouslySetInnerHTML={{
+     __html: `
+       (function(l) { 
+         if (!l) {
+           window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+           window.lintrk.q = [];
+         } 
+         var s = document.getElementsByTagName("script")[0];
+         var b = document.createElement("script"); 
+         b.type = "text/javascript"; 
+         b.async = true;
+         b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";  // Laad direct van LinkedIn
+         s.parentNode.insertBefore(b, s);
+       })(window.lintrk);
+     `
+   }}
+ />,
+   ]),
+
    setHeadComponents([
     <Partytown key="partytown" debug={true} forward={['dataLayer.push']} />,
     <script
@@ -57,39 +92,7 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
     }}
     />,  
 ]),
-setHeadComponents([
-   // Dit script zorgt voor het LinkedIn tracking ID en initialisatie
-   <Script 
-   key="linkedin"
-   dangerouslySetInnerHTML={{
-     __html: `
-       _linkedin_partner_id = ${linkedinTrackingId}; 
-       window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
-       window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-     `
-   }}
- />, 
- // Het laden van het Insight Tag-script direct van LinkedIn, zonder proxy
- <Script
-   key="linkedin-insight"
-   dangerouslySetInnerHTML={{
-     __html: `
-       (function(l) { 
-         if (!l) {
-           window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
-           window.lintrk.q = [];
-         } 
-         var s = document.getElementsByTagName("script")[0];
-         var b = document.createElement("script"); 
-         b.type = "text/javascript"; 
-         b.async = true;
-         b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";  // Laad direct van LinkedIn
-         s.parentNode.insertBefore(b, s);
-       })(window.lintrk);
-     `
-   }}
- />,
-   ]),
+
    setPreBodyComponents([
     <noscript
       key="gtm"
