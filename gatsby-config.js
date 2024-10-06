@@ -9,13 +9,13 @@ require('dotenv').config({
 
 const gtmTrackingId = process.env.GATSBY_GTM_MEASUREMENT_ID;
 const cspDirectives = [
-  "default-src 'self' 'unsafe-inline' https://*.hotjar.com https://*.hotjar.io wss://*.hotjar.com https://js.stripe.com/v3",
-  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com/ https://*.hotjar.com https://js.stripe.com/v3",
+  "default-src 'self' 'unsafe-inline' https://*.hotjar.com https://*.hotjar.io wss://*.hotjar.com https://js.stripe.com/v3 https://snap.licdn.com",
+  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com/ https://*.hotjar.com https://js.stripe.com/v3 https://snap.licdn.com",
   "font-src 'self' https://*.hotjar.com",
   "style-src 'self' 'unsafe-inline' https://*.hotjar.com",
-  "img-src 'self' data: https://iwankoenderman/  https://*.google-analytics.com https://www.googletagmanager.com/ https://*.hotjar.com",
+  "img-src 'self' data: https://iwankoenderman/  https://*.google-analytics.com https://www.googletagmanager.com/ https://*.hotjar.com https://px.ads.linkedin.com",
   "frame-src 'self' https://www.youtube-nocookie.com https://youtube-nocookie.com https://*.hotjar.com https://js.stripe.com/ ", 
-  "connect-src 'self'  https://*.google-analytics.com/ https://*.analytics.google.com/ https://*.googletagmanager.com/ https://*.hotjar.com https://*.hotjar.io wss://*.hotjar.com",
+  "connect-src 'self'  https://*.google-analytics.com/ https://*.analytics.google.com/ https://*.googletagmanager.com/ https://*.hotjar.com https://*.hotjar.io wss://*.hotjar.com https://px.ads.linkedin.com",
   "object-src 'self' blob: https://www.googletagmanager.com/",
   "worker-src 'self' blob: https://www.googletagmanager.com/"
 ]

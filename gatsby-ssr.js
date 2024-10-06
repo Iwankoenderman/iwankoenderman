@@ -1,5 +1,6 @@
 import React from "react"
 import { Partytown } from '@builder.io/partytown/react';
+import { Script } from "gatsby"
 
 const ORIGIN = "https://www.googletagmanager.com";
 const gtmTrackingId = process.env.GATSBY_GTM_MEASUREMENT_ID
@@ -56,9 +57,8 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
     }}
     />,   
    // Dit script zorgt voor het LinkedIn tracking ID en initialisatie
-   <script 
+   <Script 
    key="linkedin"
-   type="text/partytown"
    dangerouslySetInnerHTML={{
      __html: `
        _linkedin_partner_id = ${linkedinTrackingId}; 
@@ -68,7 +68,7 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
    }}
  />,    
  // Het laden van het Insight Tag-script direct van LinkedIn, zonder proxy
- <script 
+ <Script
    key="linkedin-insight"
    dangerouslySetInnerHTML={{
      __html: `
