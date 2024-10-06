@@ -6,7 +6,6 @@ const ORIGIN = "https://www.googletagmanager.com";
 const gtmTrackingId = process.env.GATSBY_GTM_MEASUREMENT_ID
 const gaTrackingId = process.env.GATSBY_GA_MEASUREMENT_ID
 const hotJarId = process.env.GATSBY_HOTJAR_ID; 
-const linkedinTrackingId = process.env.GATSBY_LINKEDIN_PARTNER_ID;
 
 export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyComponents}) => {
   
