@@ -59,7 +59,7 @@ export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyC
     <script 
     key="linkedin-insight" 
     type="text/javascript"
-     src="/linkedin-insight" async>
+     src="https://snap.licdn.com/li.lms-analytics/insight.min.js" async>
     </script>,
   
    ]),
