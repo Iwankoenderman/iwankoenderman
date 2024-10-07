@@ -7,6 +7,9 @@ const LinkedInInsightTag = () => {
   const [cookies] = useCookies(['gatsbyconsentcookie']);
 
   useEffect(() => {
+    console.log('Waarde van gatsbyconsentcookie:', cookies.gatsbyconsentcookie); // Log de cookie waarde
+    console.log('LinkedIn Partner ID:', linkedInPartnerId); // Log de partner ID
+    
     const loadLinkedInScript = () => {
       if (!linkedInPartnerId) {
         console.error('LinkedIn Partner ID is niet beschikbaar.');
@@ -20,6 +23,9 @@ const LinkedInInsightTag = () => {
       script.onload = () => {
         window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
         window._linkedin_data_partner_ids.push(linkedInPartnerId);
+      };
+      script.onerror = () => {
+        console.error('Fout bij het laden van de LinkedIn Insight Tag.');
       };
       document.head.appendChild(script);
     };
