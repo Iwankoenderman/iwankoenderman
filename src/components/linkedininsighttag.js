@@ -4,7 +4,7 @@ import { useCookies } from 'react-cookie';
 const linkedInPartnerId = process.env.GATSBY_LINKEDIN_PARTNER_ID;
 
 const LinkedInInsightTag = () => {
-  const [cookies] = useCookies(['cookieConsent']);
+  const [cookies] = useCookies(['gatsbyconsentcookie']);
 
   useEffect(() => {
     const loadLinkedInScript = () => {
@@ -32,7 +32,7 @@ const LinkedInInsightTag = () => {
     };
 
     // Controleer of cookies zijn geaccepteerd
-    if (cookies.cookieConsent === 'true') {
+    if (cookies.gatsbyconsentcookie === 'true') {
       window.addEventListener('scroll', handleScroll); // Voeg scroll event listener toe
 
       // Fallback: Laad het script na 10 seconden als de gebruiker niet scrollt
