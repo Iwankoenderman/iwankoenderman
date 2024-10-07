@@ -1,86 +1,43 @@
-import React from "react"
-import { Partytown } from '@builder.io/partytown/react';
+import "@fontsource/clear-sans";
 
+// Zorg ervoor dat je Google Analytics correct instelt
+const GA_TRACKING_ID = process.env.GATSBY_GA_TRACKING_ID; // Zorg ervoor dat dit is ingesteld in je .env
 
-const ORIGIN = "https://www.googletagmanager.com";
-const gtmTrackingId = process.env.GATSBY_GTM_MEASUREMENT_ID
-const gaTrackingId = process.env.GATSBY_GA_MEASUREMENT_ID
-const hotJarId = process.env.GATSBY_HOTJAR_ID; 
+// Functie om Google Analytics te initialiseren
+const initializeAnalytics = () => {
+  if (typeof window.gtag !== 'function') {
+    // Laad de gtag.js bibliotheek als deze nog niet is geladen
+    const script = document.createElement('script');
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`;
+    script.async = true;
+    document.head.appendChild(script);
 
-export const onRenderBody = ({ setHeadComponents, setHtmlAttributes, setPreBodyComponents}) => {
-  
-   setHtmlAttributes({ lang: [`nl`], })
-   setHeadComponents([
-    <Partytown key="partytown" debug={true} forward={['dataLayer.push']} />,
-    <script
-    key="analytics" 
-    type="text/partytown"
-    strategy="off-main-thread"
-    dangerouslySetInnerHTML={{
-      __html:`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      '${ORIGIN}/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','${gtmTrackingId}');`,
-    }}
-    />,
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function() {
+      window.dataLayer.push(arguments);
+    };
+    window.gtag('js', new Date());
+    window.gtag('config', GA_TRACKING_ID, {
+      page_path: window.location.pathname,
+    });
+  }
+};
 
-       <script
-    key="partytown-vanilla-config"
-    type="text/partytown"
-    dangerouslySetInnerHTML={{
-      __html: `(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','${ORIGIN}/gtag/js?id=${gaTrackingId}','gtag');
-            gtag('js', new Date());
-            gtag('config', '${gaTrackingId}');
-          `,
-    }}
-  />,   
-  
-  <script
-  key="party-hotjar-config"
-  type="text/partytown"
-    dangerouslySetInnerHTML={{
-      __html:`   (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:${hotJarId},hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`
-    }}
-    />,   
-
-   ]),
-   setPreBodyComponents([
-    <noscript
-      key="gtm"
-      dangerouslySetInnerHTML={{
-        __html: `
-                  <iframe src="${ORIGIN}/ns.html?id=${gtmTrackingId}" height="0" width="0"
-                      style="display:none;visibility:hidden"></iframe>
-                `,
-      }}
-    />,
-  ]);
-}
-
-
-
+// Gebruik de onRouteUpdate API van Gatsby
 export const onRouteUpdate = ({ location }) => {
-    if (process.env.NODE_ENV !== 'production') {
-      return null;
+  if (process.env.NODE_ENV !== 'production') {
+    return;
+  }
+
+  const pagePath = location ? location.pathname + location.search + location.hash : undefined;
+
+  // Initialize Google Analytics
+  initializeAnalytics();
+
+  // Wacht een korte tijd om de gtag functie uit te voeren
+  setTimeout(() => {
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'page_view', { page_path: pagePath });
     }
-  
-    const pagePath = location ? location.pathname + location.search + location.hash : undefined;
-  
-    setTimeout(() => {
-      if (typeof window.gtag === 'function') {
-        window.gtag('event', 'page_view', { page_path: pagePath });
-      }
-    }, 100);
-  };
-  
+  }, 100);
+};

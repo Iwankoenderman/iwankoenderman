@@ -3,11 +3,13 @@ import { MDXProvider } from "@mdx-js/react"
 import TopMenu from './topmenu'
 import Footer from'./footer'
 import CookieConsentBar from "./cookieconsentbar";
+import LinkedInInsightTag from "./linkedininsighttag";
 
 export default function Layout  ({ children  }) {
   return (   
   <div className="flexThisBox">
- <TopMenu/>    
+ <TopMenu/>   
+ <LinkedInInsightTag /> 
  <main><MDXProvider components={{
         }} >{children}</MDXProvider>
        
