@@ -38,11 +38,13 @@ const LinkedInInsightTag = () => {
     };
 
     // Controleer of cookies zijn geaccepteerd
-    if (cookies.gatsbyconsentcookie === 'true') {
+    if (cookies.gatsbyconsentcookie === true) {
       window.addEventListener('scroll', handleScroll); // Voeg scroll event listener toe
 
       // Fallback: Laad het script na 10 seconden als de gebruiker niet scrollt
       const timeoutId = setTimeout(() => {
+        
+        console.log('Fallback: LinkedIn script wordt geladen na 10 seconden'); // Debug
         loadLinkedInScript();
       }, 10000); // 10 seconden
 
