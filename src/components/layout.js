@@ -5,11 +5,14 @@ import Footer from'./footer'
 import CookieConsentBar from "./cookieconsentbar";
 import LinkedInInsightTag from "./linkedininsighttag";
 
+
 export default function Layout  ({ children  }) {
   return (   
   <div className="flexThisBox">
  <TopMenu/>   
- <LinkedInInsightTag /> 
+ <LinkedInInsightTag/> 
+
+
  <main><MDXProvider components={{
         }} >{children}</MDXProvider>
        
