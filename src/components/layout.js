@@ -4,6 +4,7 @@ import TopMenu from './topmenu'
 import Footer from'./footer'
 import CookieConsentBar from "./cookieconsentbar";
 import LinkedInInsightTag from "./linkedininsighttag";
+import FacebookPixel from "./facebookpixel"
 
 
 export default function Layout  ({ children  }) {
@@ -11,6 +12,7 @@ export default function Layout  ({ children  }) {
   <div className="flexThisBox">
  <TopMenu/>   
  <LinkedInInsightTag/> 
+ <FacebookPixel/>
 
 
  <main><MDXProvider components={{

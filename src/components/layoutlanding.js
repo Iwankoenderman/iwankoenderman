@@ -5,6 +5,7 @@ import Copyright from'./copyright'
 import loadable from '@loadable/component'
 import CookieConsentBar from "./cookieconsentbar"
 import LinkedInInsightTag from "./linkedininsighttag";
+import FacebookPixel from "./facebookpixel"
 
 import { Link } from "gatsby"
 
@@ -24,6 +25,7 @@ export default function Layoutlanding ({ children }) {
 </div>
 </div> 
 <LinkedInInsightTag/> 
+<FacebookPixel/>
 
 <main><MDXProvider components={{
           h1: props => <h1 {...props} style={{ color: "#7d7fa4"}} arialabelledby={{ text: "heading 1 voor style markdown in section zonder menu"}}/>,
