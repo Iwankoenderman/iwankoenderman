@@ -20,17 +20,6 @@ const cspDirectives = [
   "worker-src 'self' blob: https://www.googletagmanager.com/"
 ]
 
-
-Content-Security-Policy: 
-
-  script-src 'self' https://connect.facebook.net https://*.facebook.com; 
-  img-src 'self' ; 
-  frame-src 'self'  
-  connect-src 'self' https://*.facebook.com; 
-  style-src 'self' 'unsafe-inline'; 
-
-
-
 const directivesToCspHeader = headers => headers.join(';');
 const {
   NODE_ENV,
